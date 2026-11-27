@@ -48,8 +48,7 @@ await writeFile(path.join(out, 'index.html'), `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>JBC Speech IPA Library</title><link rel="stylesheet" href="taskpane.css">
 <style>
-main{max-width:640px;margin:0 auto;padding:32px 18px}h1{margin-top:24px}li{margin:8px 0;line-height:1.5}code{font-size:12px;word-break:break-all}
-h2.add{font-size:16px;margin:28px 0 6px;color:#183b40}
+li{margin:6px 0}code{font-size:12px;word-break:break-all}
 .route{border:1px solid #dce6e2;border-radius:8px;background:#fff;margin:8px 0}
 .route summary{padding:12px 14px;cursor:pointer;font-weight:600;color:#31594e;list-style-position:inside}
 .route summary::marker{color:#477b6c}
@@ -60,16 +59,17 @@ h2.add{font-size:16px;margin:28px 0 6px;color:#183b40}
 .route ol{padding-left:20px;margin:8px 0}
 .tip{font-size:12px;color:#637c74;background:#eef5f1;border-radius:6px;padding:8px 10px}
 </style>
-</head><body><main>
-<img src="assets/jbc_speech.png" alt="JBC Speech" width="240" style="height:auto">
+</head><body class="page"><main>
+<img class="page-logo" src="assets/jbc_speech.png" alt="JBC Speech" width="1972" height="789">
 <h1>IPA Library for Microsoft Word</h1>
-<p>A Word add-in that inserts International Phonetic Alphabet symbols from a searchable side pane, with a List view and a Chart view laid out like the IPA chart.</p>
+<p class="lead">A free Word add-in for typing the International Phonetic Alphabet. Click a symbol to insert it, Shift-click to hear it, and switch between a simple list and a layout that follows the IPA chart.</p>
+<p>It was made for <strong>speech-language pathologists (SLPs)</strong>, students and anyone else who transcribes speech. We hope it makes writing up assessments, notes and materials a little quicker and a lot less fiddly.</p>
 <ul>
 <li><a href="taskpane.html?preview=1">Try it in your browser</a> (symbols go into a practice box).</li>
 <li><a href="taskpane.html?preview=1&amp;view=chart">Browser demo, Chart view</a></li>
 <li><a href="help.html">Help</a> · <a href="audio-credits.html">Credits &amp; thanks</a></li>
 </ul>
-<h2 class="add">Add it to Word</h2>
+<h2>Add it to Word</h2>
 <p>Choose the way that fits your computer. Afterwards, open the <b>JBC Speech</b> tab in Word and click <b>IPA Library</b>. Menu labels vary a little between Word versions.</p>
 
 <details class="route" name="add-to-word" open>
@@ -109,6 +109,20 @@ h2.add{font-size:16px;margin:28px 0 6px;color:#183b40}
 </ol>
 <p class="tip">Microsoft intends this for testing; the add-in can disappear when browser data is cleared.</p></div>
 </details>
+<h2>A work in progress</h2>
+<div class="callout">
+<p>This is an early version, and it grows with your feedback. If there's a symbol, shortcut or layout that would help your work, please ask. If something doesn't work as it should, please let us know. Every report helps.</p>
+<div class="feedback-links">
+<a class="primary" href="https://github.com/tcanterbury/jbc_speech/issues/new?template=feature_request.md">Request a feature</a>
+<a href="https://github.com/tcanterbury/jbc_speech/issues/new?template=bug_report.md">Report a bug</a>
+<a href="https://github.com/tcanterbury/jbc_speech/issues">See what's planned</a>
+</div>
+<p class="note">These open GitHub, which needs a free account.</p>
+</div>
+
+<h2>With thanks</h2>
+<p>This library exists because of what others have generously shared: Prof. John Esling and Jill House's recordings, the International Phonetic Association's IPA chart, and the open tools behind it. We're truly grateful. Everyone is thanked on the <a href="audio-credits.html">Credits &amp; thanks</a> page.</p>
+
 <p class="note">Version ${version}. With heartfelt thanks to John Esling and Jill House for the recordings (from the International Phonetic Association's interactive chart, CC BY-NC-ND 4.0), and to the International Phonetic Association for the IPA chart (CC BY-SA 3.0). Everyone who made this possible is thanked on the <a href="audio-credits.html">Credits &amp; thanks</a> page. This is an independent project and isn't endorsed by them.</p>
 </main></body></html>
 `);

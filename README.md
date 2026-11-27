@@ -2,6 +2,8 @@
 
 A Word add-in with a **JBC Speech** ribbon tab and an **IPA Library** button. The button toggles a right-hand task pane. Inserting symbols leaves the pane open; use the same button, the pane's Hide button, or Word's close button to dismiss it. The ribbon tab itself selects ribbon controls; the button inside it toggles the pane.
 
+It's made for **speech-language pathologists (SLPs)**, students and anyone else who transcribes speech, and we hope it's genuinely useful. It's a work in progress, so ideas and bug reports are very welcome: [request a feature](https://github.com/tcanterbury/jbc_speech/issues/new?template=feature_request.md) or [report a bug](https://github.com/tcanterbury/jbc_speech/issues/new?template=bug_report.md). It's built on generously shared work, especially Prof. John Esling and Jill House's recordings and the International Phonetic Association's IPA chart; see **With thanks** at the end.
+
 All standard IPA categories appear together in a single scrollable view: pulmonic consonants, vowels, non-pulmonic consonants, other symbols and affricates, diacritics, suprasegmentals, and tones/word accents. Transcription brackets and several common combinations are included for convenience. Search accepts symbols, descriptive names, categories, and Unicode codes. Shift-click previews official IPA recordings where available. The separate extIPA inventory is not included.
 
 ## Run in Word on Windows

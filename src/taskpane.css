@@ -14,6 +14,22 @@ section.symbol-section{scroll-margin-top:var(--header-offset, 260px)}
 .controls-state{font-size:10px;font-weight:400;color:#526d65;margin-left:6px}
 .controls-body{padding:12px 10px}
 
+/* ---- Reading pages (help, credits & thanks, landing page): one centred column ---- */
+body.page main{max-width:700px;margin:0 auto;padding:36px 22px 72px}
+body.page .page-logo{display:block;width:220px;max-width:70%;height:auto;margin-bottom:8px}
+body.page h1{font-size:26px;letter-spacing:-.6px;margin:18px 0 10px}
+body.page h2{display:block;font-size:15px;margin:30px 0 8px;color:#183b40}
+body.page p,body.page li{font-size:14px;line-height:1.65}
+body.page .lead{font-size:16px;color:#31594e}
+body.page .note{font-size:12px}
+.callout{background:#e7f0eb;border-left:4px solid #268274;border-radius:8px;padding:12px 16px;margin:18px 0}
+.callout p{margin:6px 0}
+.feedback-links{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 4px}
+.feedback-links a{display:inline-block;padding:8px 14px;border-radius:7px;border:1px solid #268274;color:#1d6b5e;text-decoration:none;font-weight:600;background:#fff}
+.feedback-links a:hover{background:#e5f2eb}
+.feedback-links a.primary{background:#268274;color:#fff}
+.feedback-links a.primary:hover{background:#1d6b5e}
+
 /* ---- List / Chart switch ---- */
 .tagline-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 14px}
 .tagline-row p{margin:0}
