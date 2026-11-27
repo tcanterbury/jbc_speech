@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xsi:type="TaskPaneApp">
+  <Id>bed7004a-2536-4f16-8803-b44641da4c94</Id>
+  <Version>1.0.0.1</Version>
+  <ProviderName>JBC Speech</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="JBC Speech"/>
+  <Description DefaultValue="Insert International Phonetic Alphabet symbols from one searchable sidebar."/>
+  <IconUrl DefaultValue="https://localhost:3000/assets/jbc-icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/jbc-icon-80.png"/>
+  <SupportUrl DefaultValue="https://localhost:3000/help.html"/>
+  <Hosts><Host Name="Document"/></Hosts>
+  <Requirements><Sets DefaultMinVersion="1.1"><Set Name="WordApi"/><Set Name="SharedRuntime"/></Sets></Requirements>
+  <DefaultSettings><SourceLocation DefaultValue="https://localhost:3000/taskpane.html"/></DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Requirements><bt:Sets DefaultMinVersion="1.1"><bt:Set Name="SharedRuntime"/></bt:Sets></Requirements>
+    <Hosts>
+      <Host xsi:type="Document">
+        <Runtimes><Runtime resid="Taskpane.Url" lifetime="long"/></Runtimes>
+        <DesktopFormFactor>
+          <FunctionFile resid="Taskpane.Url"/>
+          <ExtensionPoint xsi:type="PrimaryCommandSurface">
+            <CustomTab id="JBCSpeech.Tab">
+              <Group id="JBCSpeech.Symbols">
+                <Label resid="Group.Label"/>
+                <Icon><bt:Image size="16" resid="Icon.16"/><bt:Image size="32" resid="Icon.32"/><bt:Image size="80" resid="Icon.80"/></Icon>
+                <Control xsi:type="Button" id="JBCSpeech.Toggle">
+                  <Label resid="Toggle.Label"/>
+                  <Supertip><Title resid="Toggle.Label"/><Description resid="Toggle.Description"/></Supertip>
+                  <Icon><bt:Image size="16" resid="Icon.16"/><bt:Image size="32" resid="Icon.32"/><bt:Image size="80" resid="Icon.80"/></Icon>
+                  <Action xsi:type="ExecuteFunction"><FunctionName>toggleIpaPane</FunctionName></Action>
+                </Control>
+              </Group>
+              <Label resid="Tab.Label"/>
+            </CustomTab>
+          </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+    <Resources>
+      <bt:Images><bt:Image id="Icon.16" DefaultValue="https://localhost:3000/assets/jbc-icon-16.png"/><bt:Image id="Icon.32" DefaultValue="https://localhost:3000/assets/jbc-icon-32.png"/><bt:Image id="Icon.80" DefaultValue="https://localhost:3000/assets/jbc-icon-80.png"/></bt:Images>
+      <bt:Urls><bt:Url id="Taskpane.Url" DefaultValue="https://localhost:3000/taskpane.html"/></bt:Urls>
+      <bt:ShortStrings><bt:String id="Tab.Label" DefaultValue="JBC Speech"/><bt:String id="Group.Label" DefaultValue="Phonetics"/><bt:String id="Toggle.Label" DefaultValue="IPA Library"/></bt:ShortStrings>
+      <bt:LongStrings><bt:String id="Toggle.Description" DefaultValue="Show or hide the IPA library. Click a symbol to insert it in your document."/></bt:LongStrings>
+    </Resources>
+  </VersionOverrides>
+</OfficeApp>

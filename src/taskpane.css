@@ -1,0 +1,71 @@
+:root{font-family:"Segoe UI",sans-serif;color:#183b40;background:#f6f8f7;font-size:13px;color-scheme:light}
+*{box-sizing:border-box}body{margin:0}header{padding:20px 18px 14px;background:#fff;border-bottom:1px solid #dce6e2;position:sticky;top:0;z-index:2}.brand{display:flex;align-items:center;gap:9px;font-size:16px;letter-spacing:.3px}.brand-logo{display:block;width:220px;max-width:calc(100% - 42px);height:auto;object-fit:contain}.badge{margin-left:auto;font-size:10px;letter-spacing:1px;border:1px solid #dae5df;border-radius:5px;padding:4px 6px;color:#53716a}h1{font-size:22px;letter-spacing:-.7px;margin:20px 0 4px;font-weight:650}header p{margin:0 0 17px;color:#688079}.search{display:flex;align-items:center;border:1px solid #cddcd6;border-radius:8px;padding:0 10px;gap:7px;background:#fafcfb}.search span{font-size:24px}.search input{width:100%;min-width:0;border:0;outline:0;background:transparent;padding:12px 0;color:inherit;font:inherit}.search:focus-within{outline:2px solid #268274;outline-offset:2px}.toolbar{display:flex;gap:8px;align-items:center;margin-top:11px}.toolbar label{font-size:11px;color:#526d65;white-space:nowrap}select{min-width:0;flex:1}select,button{font:inherit}select,#hide{border:1px solid #dce6e2;background:white;border-radius:5px;padding:6px;color:#31594e}button{cursor:pointer}button:focus-visible,select:focus-visible,a:focus-visible,textarea:focus-visible{outline:2px solid #197565;outline-offset:3px}main{padding:4px 18px 64px}.instruction{line-height:1.5;margin-bottom:5px}.note{font-size:11px;line-height:1.5;color:#637c74;margin-top:0}section.symbol-section{scroll-margin-top:300px;margin-top:24px}h2{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:650;margin:0 0 10px;color:#375e54}h2 span{color:#7a9088;font-size:10px;font-weight:400}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(43px,1fr));gap:6px}.symbol{display:flex;align-items:center;justify-content:center;min-height:46px;padding:5px 2px;background:white;border:1px solid #dae5df;border-radius:7px;color:#174b41;font:25px "Doulos SIL","Charis SIL","Segoe UI",serif;transition:background .12s,border-color .12s}.symbol:hover{background:#e5f2eb;border-color:#79a58f}.symbol:active{background:#cde5d8}.symbol:disabled{opacity:.5;cursor:wait}.symbol[data-long="true"]{font-size:20px}.status{position:fixed;bottom:0;left:0;right:0;padding:12px 18px;border-top:1px solid #dce6e2;background:#fff;font-size:11px;color:#456b5e;z-index:3;min-height:40px}.status.error{color:#a12f2f;background:#fff4f1}footer{border-top:1px solid #dce6e2;padding-top:16px;margin-top:28px;font-size:10px;line-height:1.8;color:#73847b}a{color:#336c59}#preview-area{padding:12px;background:#e7f0eb;border-radius:8px;margin-top:15px}#preview-area label{font-size:11px}textarea{display:block;width:100%;resize:vertical;margin-top:7px;border:1px solid #afc9b9;border-radius:4px;padding:8px;font:23px "Segoe UI",serif}[hidden]{display:none!important}@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+/* Audio controls and a small availability marker for the selected voice. */
+#stop-audio{border:1px solid #dce6e2;background:#fff;border-radius:5px;padding:6px;color:#31594e;white-space:nowrap}
+#stop-audio:disabled{opacity:.45;cursor:default}
+.symbol{position:relative}
+.symbol[data-audio="true"]::after{content:'♪';position:absolute;right:3px;top:1px;font:10px "Segoe UI",sans-serif;color:#477b6c}
+section.symbol-section{scroll-margin-top:var(--header-offset, 260px)}
+.controls-panel{border:1px solid #dce6e2;border-radius:8px;background:#fafcfb}
+.controls-panel summary{padding:10px 11px;cursor:pointer;font-weight:600;color:#31594e}
+.controls-panel summary::marker{color:#477b6c}
+.controls-panel summary:focus-visible{outline:2px solid #197565;outline-offset:3px;border-radius:7px}
+.controls-panel[open] summary{border-bottom:1px solid #dce6e2}
+.controls-state{font-size:10px;font-weight:400;color:#526d65;margin-left:6px}
+.controls-body{padding:12px 10px}
+
+/* ---- List / Chart switch ---- */
+.tagline-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 14px}
+.tagline-row p{margin:0}
+.view-switch{display:inline-flex;flex:none;border:1px solid #cddcd6;border-radius:7px;background:#fafcfb;padding:2px}
+.view-switch label{position:relative;cursor:pointer}
+.view-switch input{position:absolute;opacity:0;width:1px;height:1px}
+.view-switch span{display:block;padding:4px 10px;border-radius:5px;font-size:11px;font-weight:600;color:#526d65}
+.view-switch input:checked+span{background:#268274;color:#fff}
+.view-switch input:focus-visible+span{outline:2px solid #197565;outline-offset:2px}
+
+/* ---- Chart view ---- */
+.chart-section h2{font-size:12px;text-transform:uppercase;letter-spacing:.6px}
+.chart-section h3{font-size:11px;font-weight:600;color:#53716a;margin:14px 0 6px}
+.chart-note{font-size:10px;line-height:1.5;color:#73847b;margin:8px 0 0}
+.symbol.chart-symbol{min-height:0;height:28px;width:100%;padding:0;border-radius:5px;font-size:19px;line-height:1}
+.symbol.chart-symbol[data-long="true"]{font-size:14px}
+.symbol.chart-symbol[data-audio="true"]::after{font-size:7px;right:1px;top:0}
+.symbol.dim{opacity:.22}
+
+/* Pulmonic table: the full table on wide panes, four slices on narrow ones. */
+.pulmonic{width:100%;border-collapse:collapse;table-layout:fixed;background:#fff}
+.pulmonic th,.pulmonic td{border:1px solid #c9d8d1;padding:2px 1px;text-align:center}
+.pulmonic thead th{font-size:9.5px;font-weight:600;color:#375e54;line-height:1.2;padding:4px 1px;overflow:hidden;text-overflow:ellipsis}
+.pulmonic tbody th{font-size:9.5px;font-weight:500;color:#375e54;text-align:left;padding:2px 4px;line-height:1.15}
+.pulmonic .corner,.pulmonic tbody th{width:4.4rem}
+.pulmonic td.shade,.pulmonic .half.shade{background:#dfe5e2}
+.pair{display:flex;justify-content:center;gap:2px}
+.half{flex:0 0 24px;width:24px;height:28px;border-radius:4px}
+.pulmonic-full{display:none}
+.pulmonic-split h3:first-child{margin-top:0}
+@media (min-width:680px){.pulmonic-full{display:block}.pulmonic-split{display:none}}
+
+/* Vowel trapezoid. Buttons sit on the chart's lines; the dot marks an unrounded/rounded pair. */
+/* Height follows the pane width (vw = pane width here); aspect-ratio would let min-height widen the plot. */
+.vowel-chart{padding:28px 32px 20px 58px}
+.vowel-plot{position:relative;height:clamp(210px,48vw,330px);max-width:440px}
+.vowel-plot svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.vowel-plot line{stroke:#8fae9f;stroke-width:1.2}
+.vowel{position:absolute;display:flex;align-items:center;gap:3px;transform:translate(-50%,-50%);z-index:1}
+.vowel .chart-symbol{width:24px;height:28px}
+.vowel-dot{width:5px;height:5px;border-radius:50%;background:#375e54;flex:none}
+.vowel-space{width:4px;flex:none}
+.vowel-axis{position:absolute;font-size:10px;color:#688079;white-space:nowrap}
+.vowel-axis-x{top:-27px;transform:translateX(-50%)}
+.vowel-axis-y{left:-56px;transform:translateY(-50%)}
+
+/* Labelled rows: non-pulmonic, other symbols, diacritics, suprasegmentals, tones, extras. */
+.chart-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));gap:4px 14px}
+.chart-row{display:grid;grid-template-columns:34px 1fr auto;align-items:center;gap:8px;min-height:30px}
+.chart-label{font-size:11px;line-height:1.3;color:#375e54}
+.chart-example{font:17px "Doulos SIL","Charis SIL","Segoe UI",serif;color:#688079;text-align:right}
+.np-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(9rem,1fr));gap:0 14px}
+.np-column h3,.tone-column h3{margin-top:4px}
+.tone-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:6px 18px}
+.tone-row{display:grid;grid-template-columns:34px 40px 1fr auto;align-items:center;gap:8px;min-height:30px}

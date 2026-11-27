@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chart View Spec</title>
+<style>
+:root{--ink:#183b40;--muted:#688079;--line:#dce6e2;--teal:#268274;--bg:#f6f8f7;--card:#fff;
+  --lips:#e8794a;--tip:#268274;--body:#5a6fd6;--throat:#b04f9c;--shade:#dfe5e2}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#dbe9e5;--muted:#93aaa3;--line:#2c3d39;--bg:#121a18;--card:#1a2422;--shade:#33403c}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 "Segoe UI",system-ui,sans-serif}
+.wrap{max-width:1040px;margin:0 auto;padding:28px 18px 80px}
+header{display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin-bottom:12px}
+header img{width:180px;height:auto;background:#fff;border-radius:12px;padding:10px}
+h1{font-size:34px;margin:0;letter-spacing:-.8px}
+h1 small{display:block;font-size:14px;color:var(--muted);font-weight:400;letter-spacing:0}
+h2{font-size:20px;margin:44px 0 12px;display:flex;align-items:center;gap:10px}
+h2 .n{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--teal);color:#fff;font-size:14px}
+p{max-width:72ch}
+.ipa{font-family:"Doulos SIL","Charis SIL","Segoe UI",serif}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.shots{display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start}
+figure{margin:0}
+figure img{display:block;border:1px solid var(--line);border-radius:8px;box-shadow:0 4px 18px rgba(0,0,0,.08);max-width:100%;height:auto}
+figcaption{font-size:12px;color:var(--muted);margin-top:6px;max-width:330px}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.why .card b{display:block;margin-bottom:4px}
+.tag{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:99px;color:#fff;margin-right:6px}
+/* Width demo */
+.demo-controls{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:12px}
+.demo-controls input{width:min(420px,100%)}
+.badge{font-size:12px;font-weight:700;padding:3px 10px;border-radius:99px;background:var(--teal);color:#fff}
+.pane{border:2px solid var(--ink);border-radius:8px;padding:10px;background:var(--card);transition:width .15s;max-width:100%}
+.pane .row{display:grid;gap:3px;margin-bottom:8px}
+.pane .cell{height:26px;border-radius:4px;display:grid;place-items:center;font-size:10px;color:#fff;font-weight:600;overflow:hidden;white-space:nowrap}
+.pane .label{font-size:11px;font-weight:700;margin:6px 0 3px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;margin-top:10px}
+.legend span::before{content:'';display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px;background:var(--c)}
+/* Decisions */
+table{border-collapse:collapse;width:100%;background:var(--card);border-radius:10px;overflow:hidden}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top;font-size:14px}
+th{background:color-mix(in srgb,var(--teal) 14%,var(--card))}
+.shade-demo{display:inline-grid;grid-template-columns:repeat(2,26px);gap:2px;vertical-align:middle;margin-right:6px}
+.shade-demo i{height:24px;border:1px solid var(--line);border-radius:3px;display:grid;place-items:center;font-style:normal}
+.shade-demo .x{background:var(--shade)}
+.tests li{margin:6px 0}
+.tests li::marker{content:'✔  ';color:var(--teal)}
+code{background:color-mix(in srgb,var(--teal) 10%,transparent);padding:1px 5px;border-radius:4px;font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <img src="../src/assets/jbc_speech.png" alt="JBC Speech logo">
+  <h1>Chart view <small>The IPA library laid out like the 2020 IPA chart · 26 Nov 2026</small></h1>
+</header>
+
+<p>The pane now has a <b>List | Chart</b> switch. <b>List</b> is the original layout and is the default. <b>Chart</b> puts each symbol where it sits on the official IPA chart, so she can find a sound by <i>where it's made</i> instead of by name.</p>
+
+<h2><span class="n">1</span>The switch</h2>
+<div class="shots">
+  <figure><img src="images/narrow-header.png" width="320" alt="Pane header with the List / Chart switch"><figcaption>Top of the pane, always visible. The last choice is remembered.</figcaption></figure>
+  <div class="why" style="flex:1;min-width:260px">
+    <div class="card"><b>Why not a ribbon checkbox?</b>Word add-in ribbons only offer plain buttons and dropdown menus. No checkbox, no on/off button. They also can't show which view is active.</div>
+    <div class="card"><b>Why not a second ribbon button?</b>The add-in has one pane. A second button would open the same pane anyway, one extra trip to the ribbon each time.</div>
+  </div>
+</div>
+
+<h2><span class="n">2</span>Breaking up the consonant table</h2>
+<p>The chart has 11 places of articulation, each with a voiceless/voiced pair. That's 22 symbol slots across, too many for a pane about 300 px wide. In a narrow pane the table is cut into four slices by place. Each slice keeps the chart's rows, pairs and grey "impossible" cells. Drag the slider to see the switch-over at 680 px.</p>
+<div class="card">
+  <div class="demo-controls">
+    <label for="w">Pane width: <b id="wv">320</b> px</label>
+    <input id="w" type="range" min="280" max="900" value="320">
+    <span class="badge" id="mode">4 slices</span>
+  </div>
+  <div class="pane" id="pane"></div>
+  <div class="legend">
+    <span style="--c:var(--lips)">Lips: bilabial, labiodental</span>
+    <span style="--c:var(--tip)">Tongue tip &amp; blade: dental → retroflex</span>
+    <span style="--c:var(--body)">Tongue body: palatal, velar, uvular</span>
+    <span style="--c:var(--throat)">Throat: pharyngeal, glottal</span>
+  </div>
+</div>
+
+<h2><span class="n">3</span>What it looks like</h2>
+<div class="shots">
+  <figure><img src="images/narrow-consonants.png" width="320" alt="Narrow pane: consonant table in four slices"><figcaption><b>Narrow pane (320 px).</b> Four slices. Dental, alveolar and postalveolar share one cell except for fricatives, as on the chart (<span class="ipa">t d</span> spans all three).</figcaption></figure>
+  <figure><img src="images/narrow-vowels.png" width="320" alt="Narrow pane: vowel trapezoid"><figcaption><b>Vowel trapezoid, narrow.</b> The dot joins an unrounded (left) and rounded (right) pair. Every vowel is a button.</figcaption></figure>
+</div>
+<figure style="margin-top:18px"><img src="images/wide-chart.png" width="760" alt="Wide pane: full consonant table and vowel chart"><figcaption style="max-width:none"><b>Wide pane (760 px).</b> The full table, just like the printed chart.</figcaption></figure>
+
+<h2><span class="n">4</span>Vowel geometry</h2>
+<div class="shots">
+<svg width="430" height="300" viewBox="-60 -40 430 300" role="img" aria-label="Trapezoid geometry diagram" style="background:var(--card);border:1px solid var(--line);border-radius:12px;max-width:100%">
+  <g stroke="currentColor" stroke-width="1.5" fill="none" opacity=".55">
+    <path d="M0 0 H300 V240 H129 Z"/><path d="M43 80 H300 M86 160 H300 M150 0 L214.5 240"/>
+  </g>
+  <g fill="var(--teal)"><circle cx="0" cy="0" r="5"/><circle cx="150" cy="0" r="5"/><circle cx="300" cy="0" r="5"/><circle cx="129" cy="240" r="5"/></g>
+  <g font-size="12" fill="currentColor">
+    <text x="-55" y="4">y = 0</text><text x="-55" y="244">y = 1</text>
+    <text x="-6" y="-14">x = 0</text><text x="286" y="-14">x = 1</text>
+    <text x="40" y="270" fill="var(--teal)" font-weight="700">front edge: x = 0.43 · y</text>
+    <text x="175" y="130" fill="var(--body)" font-weight="700">central = midway</text>
+  </g>
+  <g class="ipa" font-size="20" fill="currentColor"><text x="-22" y="-6">i</text><text x="8" y="-6">y</text><text x="104" y="236">a</text><text x="136" y="236">ɶ</text></g>
+</svg>
+<div class="card" style="flex:1;min-width:240px">
+  <p style="margin-top:0">Every vowel has an <code>x</code> (front → back) and <code>y</code> (close → open) between 0 and 1. The front edge slants right as the mouth opens. The 0.43 slope was measured off the 2020 chart.</p>
+  <p>The plot's height follows the pane width (<code>clamp(210px, 48vw, 330px)</code>). An earlier fixed-ratio version pushed the back vowels off a narrow pane; the first screenshot caught it.</p>
+</div>
+</div>
+
+<h2><span class="n">5</span>Decisions</h2>
+<table>
+  <tr><th>Topic</th><th>Decision</th></tr>
+  <tr><td>Default view</td><td><span class="tag" style="background:var(--teal)">List</span>on first open; afterwards whichever she used last.</td></tr>
+  <tr><td>Search in Chart view</td><td>Non-matching symbols fade out, so the chart keeps its shape.</td></tr>
+  <tr><td>Jump to</td><td>Same menu, scrolls to the matching chart section.</td></tr>
+  <tr><td>Diacritics</td><td>Shows the chart's example (<span class="ipa">n̥ d̥</span>); a click inserts <b>only the mark</b>.</td></tr>
+  <tr><td>Shading</td><td><span class="shade-demo"><i class="x"></i><i class="x"></i></span>impossible cell &nbsp; <span class="shade-demo"><i class="ipa">ʔ</i><i class="x"></i></span>impossible voiced half (glottal, pharyngeal plosives)</td></tr>
+  <tr><td>Not on the chart</td><td><b>Extras</b> section: <span class="ipa">t͡ʃ d͡ʒ t͡s d͡z ɚ ɝ ɫ [ ] /</span>. <span class="ipa">ɫ</span> was newly added to the library.</td></tr>
+  <tr><td>Audio, Shift-click, keyboard</td><td>Identical in both views; Chart view reuses the List view's buttons.</td></tr>
+</table>
+
+<h2><span class="n">6</span>Safety net (automated tests)</h2>
+<ul class="tests card">
+  <li>The chart and the library contain <b>exactly the same symbols</b>. Nothing missing, nothing extra, no duplicates.</li>
+  <li>Every consonant row covers all 11 places, and no merged cell is cut across two slices.</li>
+  <li>Landmarks match the 2020 chart: <span class="ipa">t d</span> merged, <span class="ipa">θ</span>/<span class="ipa">ʒ</span> placement, shaded cells.</li>
+  <li>Every vowel stays inside the trapezoid.</li>
+</ul>
+<p style="color:var(--muted);font-size:13px">Still to do in real Word: insert a consonant, vowel and diacritic from Chart view; Shift-click a vowel; widen the pane past 680 px; hide/reopen and check the view is remembered.</p>
+</div>
+
+<script>
+// Width demo: colour blocks stand in for the 11 places (no symbol data copied here).
+const groups = [['Lips', 'var(--lips)', ['Bilabial', 'Labiodent.']], ['Tongue tip & blade', 'var(--tip)', ['Dental', 'Alveolar', 'Postalv.', 'Retroflex']],
+  ['Tongue body', 'var(--body)', ['Palatal', 'Velar', 'Uvular']], ['Throat', 'var(--throat)', ['Pharyng.', 'Glottal']]];
+const pane = document.getElementById('pane'), slider = document.getElementById('w');
+function draw() {
+  const width = +slider.value;
+  document.getElementById('wv').textContent = width;
+  pane.style.width = width + 'px';
+  const full = width >= 680;
+  document.getElementById('mode').textContent = full ? 'Full table' : '4 slices';
+  pane.replaceChildren();
+  const row = (places) => { const r = document.createElement('div'); r.className = 'row'; r.style.gridTemplateColumns = `repeat(${places.length},1fr)`;
+    for (const [name, color] of places) { const c = document.createElement('div'); c.className = 'cell'; c.style.background = color; c.textContent = name; r.append(c); } return r; };
+  if (full) pane.append(row(groups.flatMap(([, color, names]) => names.map(n => [n, color]))));
+  else for (const [title, color, names] of groups) {
+    const l = document.createElement('div'); l.className = 'label'; l.textContent = title; l.style.color = color;
+    pane.append(l, row(names.map(n => [n, color])));
+  }
+}
+slider.addEventListener('input', draw); draw();
+</script>
+</body>
+</html>

@@ -1,0 +1,2226 @@
+{
+  "retrieved": "2026-11-27T03:21:07.580Z",
+  "sourceUrl": "https://www.internationalphoneticassociation.org/IPAcharts/IPA_charts_TI/dbs/arrays.js",
+  "creditsUrl": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/IPA_charts_about.html",
+  "license": "CC BY-NC-ND 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "speakers": {
+    "JE": "John Esling",
+    "JH": "Jill House"
+  },
+  "unmodified": true,
+  "files": [
+    {
+      "symbol": "a",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0061.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0061.mp3",
+      "bytes": 20689,
+      "sha256": "348ce0b3b725e0821b40343473c8f40b2ad86db9a672d3b6d79eeb3bbaa88a27"
+    },
+    {
+      "symbol": "b",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0062.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0062.mp3",
+      "bytes": 45766,
+      "sha256": "09ea42e0258d86c3b01c5018eaab29d40d416da5b40af8dd3417768ba4e040c8"
+    },
+    {
+      "symbol": "c",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0063.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0063.mp3",
+      "bytes": 42631,
+      "sha256": "b120208a5ce39fa2078e26d83d8406bb6a87fa3f131ef75b2d306fb93d0d5533"
+    },
+    {
+      "symbol": "d",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0064.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0064.mp3",
+      "bytes": 47020,
+      "sha256": "d3fd1fe3dc1218bcae49ad6545f6e7e837fe17314051c99f89658320bd59d460"
+    },
+    {
+      "symbol": "e",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0065.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0065.mp3",
+      "bytes": 23196,
+      "sha256": "245f4dc5035dcab502a37fc9f502edf1ff5981e31b79d84206c0e4b3d6cdbac8"
+    },
+    {
+      "symbol": "f",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0066.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0066.mp3",
+      "bytes": 53916,
+      "sha256": "cd399883b92d85ab5cf4615c4a11c52faf37ee0a0d9c318800ccae6e94fbe19a"
+    },
+    {
+      "symbol": "h",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0068.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0068.mp3",
+      "bytes": 53916,
+      "sha256": "676db1a55acb2d59e24c7e3b818fbce4c35a89a772ad9a7b7c0eadff56e16dbe"
+    },
+    {
+      "symbol": "i",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0069.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0069.mp3",
+      "bytes": 23823,
+      "sha256": "9c558e96f4f162664ba528b09338bacd8d3c599ee791842b3711d3bd37de9e01"
+    },
+    {
+      "symbol": "j",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/006A.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/006A.mp3",
+      "bytes": 48274,
+      "sha256": "ecd57c0d4f770937d63f7685980446df60a9a74ba945da5ff1e9cf75b38c6890"
+    },
+    {
+      "symbol": "k",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/006B.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/006B.mp3",
+      "bytes": 44512,
+      "sha256": "d08f65a74afdd6969f5c76b034859121fce0d79979cfe826dd8235279d7340af"
+    },
+    {
+      "symbol": "l",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/006C.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/006C.mp3",
+      "bytes": 54543,
+      "sha256": "b29decfe03f5a4c4b05d1733be6b5c77c6eb564c3ff3d7d44ef310203e70c2dc"
+    },
+    {
+      "symbol": "m",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/006D.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/006D.mp3",
+      "bytes": 43885,
+      "sha256": "26faf0dfb307e0a905176c3db1ac19487a9dd211970c1afa1140053d17b801a6"
+    },
+    {
+      "symbol": "n",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/006E.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/006E.mp3",
+      "bytes": 46393,
+      "sha256": "f0628e2f1b25e2be7d5e2cdd5cf15ab43e59a70ea89867f4c7702b0d67690bc8"
+    },
+    {
+      "symbol": "o",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/006F.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/006F.mp3",
+      "bytes": 18808,
+      "sha256": "caafef93394b09181ac54fd5dd98416a336a1fe5be9570d949d0d7bd01fe29b6"
+    },
+    {
+      "symbol": "p",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0070.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0070.mp3",
+      "bytes": 41378,
+      "sha256": "7a3894562ef9de1dee41768669365abb6a90d16d87d4d1adbc4425ccb2808bea"
+    },
+    {
+      "symbol": "q",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0071.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0071.mp3",
+      "bytes": 45139,
+      "sha256": "c9df0115c698d7cfec00523f3062c2b172e83427f4eb42fce8788798d4af95ac"
+    },
+    {
+      "symbol": "r",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0072.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0072.mp3",
+      "bytes": 47020,
+      "sha256": "993850f219866898503f39e60ff315b450e4d01d2c9a049ae9d2a712e784143c"
+    },
+    {
+      "symbol": "s",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0073.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0073.mp3",
+      "bytes": 57051,
+      "sha256": "0cc5ec548cb71537b0e0d54d7965673e182e683c87b7790079df4e3e00831b89"
+    },
+    {
+      "symbol": "t",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0074.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0074.mp3",
+      "bytes": 41378,
+      "sha256": "66c2a551fadab55cd71827e5033ecc8ea3734ca420d4edadc9b194ac1325f51b"
+    },
+    {
+      "symbol": "u",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0075.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0075.mp3",
+      "bytes": 19435,
+      "sha256": "50cf6281c54c0919e77ad6bd9fc7f90e86f2b67a016ac99612db10da8e66310d"
+    },
+    {
+      "symbol": "v",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0076.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0076.mp3",
+      "bytes": 50155,
+      "sha256": "33d4553e47825a62e44b676a2322af50e536833f304d185329ba02803525708f"
+    },
+    {
+      "symbol": "w",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0077.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0077.mp3",
+      "bytes": 46393,
+      "sha256": "7f503e4f2b441699415581aec534672ff23f8962b4cfe5dda10194ce297004db"
+    },
+    {
+      "symbol": "x",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0078.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0078.mp3",
+      "bytes": 59559,
+      "sha256": "d51c6e722f0e4c692271e52c4e91534310fd3a50cf50aaeb64947a172df4a7eb"
+    },
+    {
+      "symbol": "y",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0079.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0079.mp3",
+      "bytes": 21942,
+      "sha256": "ccf03880f8b403504722e5a847348749d3daf3deaaf9143c155e873d24cb45c5"
+    },
+    {
+      "symbol": "z",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/007A.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/007A.mp3",
+      "bytes": 51409,
+      "sha256": "0f5564bcc8bbdfc85ddf9625fbe80da1c104ad2a41bb4fa16ae5b22bb8b34fbf"
+    },
+    {
+      "symbol": "æ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/00E6.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/00E6.mp3",
+      "bytes": 18808,
+      "sha256": "223ccd141c50403e0724afbbd1fecba9f1f986ba9def30597af34f6c607d1f3b"
+    },
+    {
+      "symbol": "ç",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/00E7.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/00E7.mp3",
+      "bytes": 57051,
+      "sha256": "6dd1111d5331995962a72aeaa470d755baf6fe2cbf8e4ed4ab417224b45a8551"
+    },
+    {
+      "symbol": "ð",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/00F0.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/00F0.mp3",
+      "bytes": 57678,
+      "sha256": "42b04707c1cf3e0d6146bd17fb0d07d30faa8422af5e9d866c1f6bd917a91741"
+    },
+    {
+      "symbol": "ø",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/00F8.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/00F8.mp3",
+      "bytes": 19435,
+      "sha256": "d46ac9fdab49d6e5702d8e6eb3b918e7f4e6adc05e5235ea11d2debaa8b9d677"
+    },
+    {
+      "symbol": "ħ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0127.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0127.mp3",
+      "bytes": 61440,
+      "sha256": "d9b799c45f9df07a6e594e184a44570619891ecccc524eb9a6ec1d1382835e75"
+    },
+    {
+      "symbol": "ŋ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/014B.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/014B.mp3",
+      "bytes": 46393,
+      "sha256": "79e447e45359fcbbe3f2c4e520b91d4abaa3033061033090fdca04ec2d54f113"
+    },
+    {
+      "symbol": "œ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0153.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0153.mp3",
+      "bytes": 19435,
+      "sha256": "8c31b9e0d65060ba1fd0ab9362d7dd4beb4a199a048b4fb13f85a3c4c09dad82"
+    },
+    {
+      "symbol": "ǀ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/01C0.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/01C0.mp3",
+      "bytes": 47647,
+      "sha256": "34a768d5bf15595b1ba036ce0cdaaed5553c9f3cc15319a04a84062503348018"
+    },
+    {
+      "symbol": "ǁ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/01C1.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/01C1.mp3",
+      "bytes": 52035,
+      "sha256": "c8545019ca62b7cd7c3c30298dc1cae6aad411f378d5da058c28199893ef365d"
+    },
+    {
+      "symbol": "ǂ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/01C2.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/01C2.mp3",
+      "bytes": 51409,
+      "sha256": "2bb832359c4e3c5a12e605aafb087d53f0bd9e53912829becba85918757eb282"
+    },
+    {
+      "symbol": "ǃ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/01C3.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/01C3.mp3",
+      "bytes": 54543,
+      "sha256": "94a14e805ea415d4c95c80edaa95e48f2bd294c601ed00d7eb2f7c8a9ac03671"
+    },
+    {
+      "symbol": "ɐ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0250.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0250.mp3",
+      "bytes": 20062,
+      "sha256": "e0d8e7469f17ece3a06d163be79ff0c645d7078cbe1b0c4c26c48e8e437eb926"
+    },
+    {
+      "symbol": "ɑ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0251.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0251.mp3",
+      "bytes": 19435,
+      "sha256": "3aae713f2c24c1269d33cec8ba98d9a9fc8a941dbd88df200a8a59c3a038a218"
+    },
+    {
+      "symbol": "ɒ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0252.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0252.mp3",
+      "bytes": 20062,
+      "sha256": "a9386a7a68edd69ce78f0ab3505d863af051f77d7f9211dcff9b6c76d4fdae15"
+    },
+    {
+      "symbol": "ɓ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0253.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0253.mp3",
+      "bytes": 47020,
+      "sha256": "d127f31a54915ade1afcd0ce39d8feffdbf89bf72f6a75e991bc1c28e6ce179a"
+    },
+    {
+      "symbol": "ɔ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0254.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0254.mp3",
+      "bytes": 19435,
+      "sha256": "d4f03c8e17d2c27e547d11a713b8c940b5f4ae4af9545322bd13a4ae458fe5c5"
+    },
+    {
+      "symbol": "ɕ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0255.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0255.mp3",
+      "bytes": 54543,
+      "sha256": "457a6040908727b22f51b050845b6f7a9fdb569305d56b86fad70c0423bea0e6"
+    },
+    {
+      "symbol": "ɖ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0256.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0256.mp3",
+      "bytes": 45139,
+      "sha256": "6c9f104ebb40d55da4a776f0f0b044301e062855977fcc2bffcaef24c0e704fd"
+    },
+    {
+      "symbol": "ɗ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0257.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0257.mp3",
+      "bytes": 48901,
+      "sha256": "6a3d2d3ec69676653cc568b109180e2966686e56a04d405ac3becff8d3c7e1f3"
+    },
+    {
+      "symbol": "ɘ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0258.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0258.mp3",
+      "bytes": 20062,
+      "sha256": "b7faa1eb9206bd5fed617591491d5047ab9c80afda1d14faa2603c3028aafacd"
+    },
+    {
+      "symbol": "ə",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0259.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0259.mp3",
+      "bytes": 18808,
+      "sha256": "529b837d983575cb9fbd54ec739ce1e8f60bbba03f2303efee1d5e888b3af5c6"
+    },
+    {
+      "symbol": "ɛ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/025B.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/025B.mp3",
+      "bytes": 18808,
+      "sha256": "7bfa6daeb1e7e465b64b4b7425a82c2360874830fd205fd4fb81683181d8d049"
+    },
+    {
+      "symbol": "ɜ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/025C.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/025C.mp3",
+      "bytes": 20689,
+      "sha256": "3d8d7b7a4f133309b3490c94dd3e910c92414eab65e42028f42450e4633a7f38"
+    },
+    {
+      "symbol": "ɞ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/025E.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/025E.mp3",
+      "bytes": 18808,
+      "sha256": "c7dae6fa41c080856654c1535721ee2f5a4ea7720a835c21c5cee54b56b4051a"
+    },
+    {
+      "symbol": "ɟ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/025F.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/025F.mp3",
+      "bytes": 46393,
+      "sha256": "fc907669e488de204b18cc386302e3b01f74ffeb5797635589ea0c2010c391a6"
+    },
+    {
+      "symbol": "ɠ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0260.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0260.mp3",
+      "bytes": 49528,
+      "sha256": "86e4f45a4ab4ad1023b037d5ab48209787d44bd9da2429e067f96887b938b010"
+    },
+    {
+      "symbol": "ɡ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0261.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0261.mp3",
+      "bytes": 45766,
+      "sha256": "992693c4694f9e865d487acd4a2febddeae54a153ca6cdfe3bd15a134e13fc6c"
+    },
+    {
+      "symbol": "ɢ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0262.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0262.mp3",
+      "bytes": 50782,
+      "sha256": "c756b4a86e8758baea4b585f04b3dc1c223f32b68afc7d380cc3bb749b2cae61"
+    },
+    {
+      "symbol": "ɣ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0263.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0263.mp3",
+      "bytes": 58932,
+      "sha256": "8d1f939082ddb32fc14eb6d9fb357adc5d4df58d7f4da1efcbfb1681a9c4fda1"
+    },
+    {
+      "symbol": "ɤ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0264.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0264.mp3",
+      "bytes": 21315,
+      "sha256": "3a840601ad4d361de35749a541b3c715a7d2857f47587295863b5d3df8a0b5ce"
+    },
+    {
+      "symbol": "ɥ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0265.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0265.mp3",
+      "bytes": 48901,
+      "sha256": "091f66ad554d5e1dbd41373d15be84299f6c6b99f057a877c057c00530fdf8e7"
+    },
+    {
+      "symbol": "ɦ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0266.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0266.mp3",
+      "bytes": 61440,
+      "sha256": "94c1507602228f8a3a24a1db976d2966c7e5ff2664f3f9b5062c561d90950115"
+    },
+    {
+      "symbol": "ɧ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0267.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0267.mp3",
+      "bytes": 50155,
+      "sha256": "c9e7d65562b0fdb652dfb3f244fa4fb2c634046942a50c0cd09ee0fb4fb1b1dc"
+    },
+    {
+      "symbol": "ɨ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0268.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0268.mp3",
+      "bytes": 21942,
+      "sha256": "4eb7dc0849a98a59827a382ffc6f2bd4fda3e3d8392691adc90b56d1d667f252"
+    },
+    {
+      "symbol": "ɪ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/026A.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/026A.mp3",
+      "bytes": 16300,
+      "sha256": "e06460c87e734fd9e1d23a8525c057b83737340b18c791d2f0523a72cd26ffbf"
+    },
+    {
+      "symbol": "ɬ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/026C.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/026C.mp3",
+      "bytes": 53916,
+      "sha256": "3a767853a125fa32419880c8a3312090148d1e0a0e02ff990f546705f21cff2f"
+    },
+    {
+      "symbol": "ɭ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/026D.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/026D.mp3",
+      "bytes": 47020,
+      "sha256": "25fd676aba6c6a3c72291e663003d0c40f69728e92114afb6652abca4e29afa5"
+    },
+    {
+      "symbol": "ɮ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/026E.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/026E.mp3",
+      "bytes": 51409,
+      "sha256": "2414156be5061126c154a8d4c9d8ea6d83d136731bc1306f461c993443563ff2"
+    },
+    {
+      "symbol": "ɯ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/026F.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/026F.mp3",
+      "bytes": 25077,
+      "sha256": "e43c84601176a9b5e4abeda62a234744f0b495952fd3ac0bd01f9f4f381a7852"
+    },
+    {
+      "symbol": "ɰ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0270.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0270.mp3",
+      "bytes": 52662,
+      "sha256": "0a7d9de00d0070db5dd3332f72a19075dd8c0576ccca0e51a2fe63d215195c9c"
+    },
+    {
+      "symbol": "ɱ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0271.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0271.mp3",
+      "bytes": 47647,
+      "sha256": "06350f3308034b74dec31d36948f35a67cfc9f9c289bd67d53ee74ff29774405"
+    },
+    {
+      "symbol": "ɲ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0272.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0272.mp3",
+      "bytes": 44512,
+      "sha256": "cc2571c862ce54b7dd7a833acc94288f24817f1e8bfc82522d6c6745ec116897"
+    },
+    {
+      "symbol": "ɳ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0273.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0273.mp3",
+      "bytes": 45139,
+      "sha256": "a103cf39ec7cc1eed1bac5e041f687837b45b0c3c67beb3240a432ce409a1345"
+    },
+    {
+      "symbol": "ɴ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0274.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0274.mp3",
+      "bytes": 48274,
+      "sha256": "f400019aceaa0a2ea22ade8bf594c98f90b988b291f22442926e62087222e387"
+    },
+    {
+      "symbol": "ɵ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0275.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0275.mp3",
+      "bytes": 18808,
+      "sha256": "98969af48c4fcaa7a18e978d85af6d22c647b8f8da225ba83deab93c746fa019"
+    },
+    {
+      "symbol": "ɶ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0276.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0276.mp3",
+      "bytes": 20689,
+      "sha256": "79c3e06cc09a37c83823bf932a8ca69e78b8eb6e448ad1c1a9c2e49553e2bd31"
+    },
+    {
+      "symbol": "ɸ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0278.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0278.mp3",
+      "bytes": 53289,
+      "sha256": "1d18355413ae55210d2ba0c7428278c93f8660e7ecb7fd0763d713b46fdffbc3"
+    },
+    {
+      "symbol": "ɹ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0279.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0279.mp3",
+      "bytes": 48274,
+      "sha256": "cb9bdef71f03047e807e4b1035e7f2a98852dee738065cda60f9b18ef2c2d068"
+    },
+    {
+      "symbol": "ɺ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/027A.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/027A.mp3",
+      "bytes": 37616,
+      "sha256": "b5941aa93d2758db38ed6a6a4b47af40f53567a165ee2c7239462cb10e255e33"
+    },
+    {
+      "symbol": "ɻ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/027B.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/027B.mp3",
+      "bytes": 48274,
+      "sha256": "fd1407623a013f45e4c9695995fd2bff828d231921f9e6a73ae2e018fc17e25f"
+    },
+    {
+      "symbol": "ɽ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/027D.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/027D.mp3",
+      "bytes": 42631,
+      "sha256": "b1d199b61154fcb8e73fc25b77d1313fb32c61e68c9307152c80551af0c60283"
+    },
+    {
+      "symbol": "ɾ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/027E.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/027E.mp3",
+      "bytes": 39497,
+      "sha256": "30c54c21be28ad7300ed21eedb2135d149e43a4a7a4b8aa5c15038915f08f621"
+    },
+    {
+      "symbol": "ʀ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0280.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0280.mp3",
+      "bytes": 56424,
+      "sha256": "e4d1330bf2a9737b527fe4696d73a291b33b82cb412e9f95a235e4551220da90"
+    },
+    {
+      "symbol": "ʁ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0281.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0281.mp3",
+      "bytes": 60813,
+      "sha256": "bd57240a64b00465fe932d5983c6840c2fd5f1b53ccd4bf3b9f9bfdb37e611c6"
+    },
+    {
+      "symbol": "ʂ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0282.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0282.mp3",
+      "bytes": 53289,
+      "sha256": "5aac5d02abac575e7d72863e5ce1fd3297e7c7dffc1721878e4d55fd34df37db"
+    },
+    {
+      "symbol": "ʃ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0283.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0283.mp3",
+      "bytes": 55797,
+      "sha256": "57952fa228183aeb57e271df395ac5145ea444542f4eec3ded222444ab895ae4"
+    },
+    {
+      "symbol": "ʄ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0284.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0284.mp3",
+      "bytes": 47647,
+      "sha256": "5b5c9bb3987f42c49b74392b05526945c645f75c7cbfdb721432126365ea3894"
+    },
+    {
+      "symbol": "ʈ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0288.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0288.mp3",
+      "bytes": 42631,
+      "sha256": "979d4a8148bb69c877f4af4b3ba6a6be8f6a91bc7c66de35b0811cbcf873b454"
+    },
+    {
+      "symbol": "ʉ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0289.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0289.mp3",
+      "bytes": 23823,
+      "sha256": "7d04e7a671b2bf7f7882aa0d2fc6199ad833613009f32dad3dab9d4142040f92"
+    },
+    {
+      "symbol": "ʊ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/028A.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/028A.mp3",
+      "bytes": 16927,
+      "sha256": "4734c0714d90ad7377f7596cb4e509d8659c309ca991d58d856e3267126fe98c"
+    },
+    {
+      "symbol": "ʋ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/028B.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/028B.mp3",
+      "bytes": 46393,
+      "sha256": "9e923835fd3f6f5547a5b0848e74906d0cad51f030e76a9fddbb8e0e72e58478"
+    },
+    {
+      "symbol": "ʌ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/028C.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/028C.mp3",
+      "bytes": 18808,
+      "sha256": "fb2166b8a0fa16aa687ff99d344f01c3e40a320fbff2c44a20c83da1df782019"
+    },
+    {
+      "symbol": "ʍ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/028D.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/028D.mp3",
+      "bytes": 47020,
+      "sha256": "0f68c1cba06042157df95a22be26a717ba911d12ce02b2d32cfa584457fcedbf"
+    },
+    {
+      "symbol": "ʎ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/028E.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/028E.mp3",
+      "bytes": 50155,
+      "sha256": "af9b14cc7312549d473fe6b86f68811f0fc94dac67259bb0983ee6085f26fcff"
+    },
+    {
+      "symbol": "ʏ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/028F.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/028F.mp3",
+      "bytes": 18181,
+      "sha256": "67a65ad8d041835c3f955109a22da6b646fb4d4e5bdcdfb5cdced6d1ff95dbf3"
+    },
+    {
+      "symbol": "ʐ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0290.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0290.mp3",
+      "bytes": 54543,
+      "sha256": "e8c71699bac5a5ceebf79236bb9c1b91748115288a69f3fb33d6b92442bfb342"
+    },
+    {
+      "symbol": "ʑ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0291.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0291.mp3",
+      "bytes": 47020,
+      "sha256": "135fe069947361d6bac0f818fd808fbb2b913eae2cce26a454c873c9c2cad4de"
+    },
+    {
+      "symbol": "ʒ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0292.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0292.mp3",
+      "bytes": 54543,
+      "sha256": "c2be8656e87eb0e79ba4036851e08c885b4da1a1ce2a1105234ac00471e2db6a"
+    },
+    {
+      "symbol": "ʔ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0294.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0294.mp3",
+      "bytes": 43258,
+      "sha256": "0be819eabad69f39bd5536ecd5537d70fd9d8b9d0b7a9a772e8cb6fe09aed05b"
+    },
+    {
+      "symbol": "ʕ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0295.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0295.mp3",
+      "bytes": 63947,
+      "sha256": "f5892f8feeb9ec52435707142c0c7225221ad39bcf13c906448a0a498e31bdb2"
+    },
+    {
+      "symbol": "ʘ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0298.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0298.mp3",
+      "bytes": 49528,
+      "sha256": "26c6069a3a68c44adb48d1d793e68b962271bc021434099318deac6edb88fd4c"
+    },
+    {
+      "symbol": "ʙ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0299.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0299.mp3",
+      "bytes": 49528,
+      "sha256": "a086d07f3baca438b585cd7d667fa32f010031767683e607b0f104006efb7e4f"
+    },
+    {
+      "symbol": "ʛ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/029B.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/029B.mp3",
+      "bytes": 50155,
+      "sha256": "970810c44e21cf1325e4bdb97f239bf366964edee4fe92273ae9ba0be154c752"
+    },
+    {
+      "symbol": "ʜ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/029C.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/029C.mp3",
+      "bytes": 54543,
+      "sha256": "531352f75452299ad75312a6ba46d18e79fbad7039de985fdd0ba1b106fef882"
+    },
+    {
+      "symbol": "ʝ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/029D.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/029D.mp3",
+      "bytes": 63320,
+      "sha256": "863d96aa602274df876c03b65fe63fbca12c60c76704844cd2ed0c3f284d3bd2"
+    },
+    {
+      "symbol": "ʟ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/029F.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/029F.mp3",
+      "bytes": 48901,
+      "sha256": "c2f2cd2b042b93e9ddca1b69f5f8ba270a5741fcff5c919d07f696ae6b2adf2f"
+    },
+    {
+      "symbol": "ʡ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/02A1.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/02A1.mp3",
+      "bytes": 52035,
+      "sha256": "eecfb60f6b1c253f96a43965d8e02204cec2f06825e5ea8548d1e93908a90792"
+    },
+    {
+      "symbol": "ʢ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/02A2.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/02A2.mp3",
+      "bytes": 56424,
+      "sha256": "f9803f767214ee41471312c8918ab6b6651a775dc72618f5aaf6aeaea113e8af"
+    },
+    {
+      "symbol": "̀",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0300.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0300.mp3",
+      "bytes": 28212,
+      "sha256": "fb391a94f3e04c63c30498b2ab6ae31ddb40e380980e5945149238265a3856b1"
+    },
+    {
+      "symbol": "́",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0301.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0301.mp3",
+      "bytes": 28212,
+      "sha256": "c73de42060345e38f2033450efac654eaa9109ff3ffd34f831eadd97cc76aecf"
+    },
+    {
+      "symbol": "̂",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0302.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0302.mp3",
+      "bytes": 27585,
+      "sha256": "6e4382725e3b337d909a594cf04258d68ad8ca1ff8436741aa4d76e530893fa2"
+    },
+    {
+      "symbol": "̄",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0304.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0304.mp3",
+      "bytes": 26958,
+      "sha256": "d33c2a63ed0fa3e1710d92e4d7cc14d1c87c6b04d3119db8f210ecce7634c70d"
+    },
+    {
+      "symbol": "̋",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/030B.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/030B.mp3",
+      "bytes": 29466,
+      "sha256": "e3ffb7dc0954f0489b7921f11a3c89b5cf43f18d2ade90ca0b92df385d3b814d"
+    },
+    {
+      "symbol": "̌",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/030C.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/030C.mp3",
+      "bytes": 25704,
+      "sha256": "041b72345064e86ad93212d69ef79dc003b50940d31411ec01d71c71cd5c1eb8"
+    },
+    {
+      "symbol": "̏",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/030F.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/030F.mp3",
+      "bytes": 29466,
+      "sha256": "6b3cd09912daff5223e3a0d6727dc1201f7e53105c8cb63f7a42e377d79ebaf7"
+    },
+    {
+      "symbol": "̤",
+      "speaker": "JE",
+      "variant": 1,
+      "relative": "assets/audio/JE/0324_1.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0324_1.mp3",
+      "bytes": 50782,
+      "sha256": "c28de3daf18a1a5f9ab2010ef3f0872fb265212ddf14bdad9660c6efcfc84d98"
+    },
+    {
+      "symbol": "̤",
+      "speaker": "JE",
+      "variant": 2,
+      "relative": "assets/audio/JE/0324_2.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0324_2.mp3",
+      "bytes": 18808,
+      "sha256": "7ad80279ca9cf6fd731fae44ce5831a695158c5796a0d320663ac539204e0b4c"
+    },
+    {
+      "symbol": "̥",
+      "speaker": "JE",
+      "variant": 1,
+      "relative": "assets/audio/JE/0325_1.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0325_1.mp3",
+      "bytes": 68336,
+      "sha256": "b7e7fad933d52fcd47eea51863448b3c1052e6bfe0769da532abc60502d38262"
+    },
+    {
+      "symbol": "̥",
+      "speaker": "JE",
+      "variant": 2,
+      "relative": "assets/audio/JE/0325_2.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0325_2.mp3",
+      "bytes": 51409,
+      "sha256": "e4bdfca432d3e5d09174aace3d4b510c1c8ef784d95708c50f788f28b340d691"
+    },
+    {
+      "symbol": "̬",
+      "speaker": "JE",
+      "variant": 1,
+      "relative": "assets/audio/JE/032C_1.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/032C_1.mp3",
+      "bytes": 54543,
+      "sha256": "3d963b3e5d5fefd4c7bee79961f0dba41493714f20b4926b6ad3afe5a4b2cba2"
+    },
+    {
+      "symbol": "̬",
+      "speaker": "JE",
+      "variant": 2,
+      "relative": "assets/audio/JE/032C_2.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/032C_2.mp3",
+      "bytes": 53289,
+      "sha256": "19e76e0a938710799090be7c4cd606e840da46d543b4d1114fb6a4cce7da0bed"
+    },
+    {
+      "symbol": "͜",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/035C.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/035C.mp3",
+      "bytes": 46393,
+      "sha256": "2454cfe5f9a3e175b6178e718ec0bf0d503a59693b86b34a4860ffcbcb81f65c"
+    },
+    {
+      "symbol": "͡",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/0361.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/0361.mp3",
+      "bytes": 38870,
+      "sha256": "624ce9a1e119dac2b086be56d0e86ccd1cfe4ba544a2623f51fddbd19633844b"
+    },
+    {
+      "symbol": "β",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/03B2.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/03B2.mp3",
+      "bytes": 57678,
+      "sha256": "0dde842322accb334429c43b050d1f2a8ae3e79373a7bb71dce088bbca30fb1c"
+    },
+    {
+      "symbol": "θ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/03B8.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/03B8.mp3",
+      "bytes": 53916,
+      "sha256": "6213bae0bfa86d6a2debc4382dd9d7da89660ed7ebd54b95ac7b3f8c35d2d1e6"
+    },
+    {
+      "symbol": "χ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/03C7.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/03C7.mp3",
+      "bytes": 57678,
+      "sha256": "64f2b3407d02a46c725d7fb8161a1b54259644bcd796d734786fc9118a2a0d18"
+    },
+    {
+      "symbol": "᷄",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/1DC4.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/1DC4.mp3",
+      "bytes": 20689,
+      "sha256": "57ecd424dcdd09e3086701ccbdee93bb2e3464940e68dc600a466377a090a0d6"
+    },
+    {
+      "symbol": "᷅",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/1DC5.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/1DC5.mp3",
+      "bytes": 24450,
+      "sha256": "6a1368a553edb54e2dce436ef41de86b9787ea14b0e21077029e58131d07ea73"
+    },
+    {
+      "symbol": "᷈",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/1DC8.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/1DC8.mp3",
+      "bytes": 27585,
+      "sha256": "acffa54e5c5327af0cc86927f72d9f6dfad5d115e58827136396a9db3cf41f0d"
+    },
+    {
+      "symbol": "ⱱ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/2C71.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/2C71.mp3",
+      "bytes": 45139,
+      "sha256": "47b449c1cead918d45f3ce59b4826c3d977e73f2c7dbb547aa24569257d62fdc"
+    },
+    {
+      "symbol": "a",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0061.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0061.mp3",
+      "bytes": 16300,
+      "sha256": "d038296ba2da690092a754f26f7bdc99a8e8f285d29bd017baf007cfaebad37c"
+    },
+    {
+      "symbol": "b",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0062.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0062.mp3",
+      "bytes": 32600,
+      "sha256": "8e40649ec22891f22ba55a5e46ea6af0631e5a153101d9d5b340b7ce568285a3"
+    },
+    {
+      "symbol": "c",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0063.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0063.mp3",
+      "bytes": 32600,
+      "sha256": "6401cb51b3f72f48317714710fe9c0d889010a029046b469cde0d0baf377e670"
+    },
+    {
+      "symbol": "d",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0064.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0064.mp3",
+      "bytes": 34481,
+      "sha256": "a47c8ad3198f0a95cfa5d69151503d49a43a741c2da5d3b36e0d40f0e3a1fe21"
+    },
+    {
+      "symbol": "e",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0065.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0065.mp3",
+      "bytes": 18808,
+      "sha256": "e15d301c1f56231094a71a6aaac593165a6057fd27d0b2feda93d17d623ddef7"
+    },
+    {
+      "symbol": "f",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0066.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0066.mp3",
+      "bytes": 27585,
+      "sha256": "5bde361abf61f2a306fd59b7aec3d5477fbf084cbbba2226e6162bcfb687e230"
+    },
+    {
+      "symbol": "h",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0068.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0068.mp3",
+      "bytes": 31973,
+      "sha256": "7e10f29145ead34d701e45788058bc8c237dd9ed790872f7cd722775d9629b6e"
+    },
+    {
+      "symbol": "i",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0069.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0069.mp3",
+      "bytes": 22569,
+      "sha256": "921919d669cf346c8d59249d90818b0f45c8f687b687c646d36df858849acbf0"
+    },
+    {
+      "symbol": "j",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/006A.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/006A.mp3",
+      "bytes": 30093,
+      "sha256": "0cf4a7b12eb8d6573ffb1a9fd96141c20325358ff22902cb53bf00e52ff44827"
+    },
+    {
+      "symbol": "k",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/006B.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/006B.mp3",
+      "bytes": 26331,
+      "sha256": "269579567ef727d147e08a492dd8d6278eb32c616cbbf31390b58c6550b4224c"
+    },
+    {
+      "symbol": "l",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/006C.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/006C.mp3",
+      "bytes": 26331,
+      "sha256": "c64e1a2e527a1674751b173ac64ebc2f06046c6a3a5300a4592bb187fb150c41"
+    },
+    {
+      "symbol": "m",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/006D.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/006D.mp3",
+      "bytes": 32600,
+      "sha256": "c65a197e90c3a17979ac8410adb5f4df99b36790fc9d1d30f30b4c49540c19f0"
+    },
+    {
+      "symbol": "n",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/006E.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/006E.mp3",
+      "bytes": 26958,
+      "sha256": "2721a6f94cd48267405933c838f01e8e46c07ba1b0e0a7f8c4bafa4c52ad14ae"
+    },
+    {
+      "symbol": "o",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/006F.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/006F.mp3",
+      "bytes": 18808,
+      "sha256": "b3e590bbbd7825d80b5e9ba637829a58648a6a1762f3d4b302e3d1dc21abe35c"
+    },
+    {
+      "symbol": "p",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0070.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0070.mp3",
+      "bytes": 32600,
+      "sha256": "44c794710851915a3b3acb6cc4c2ef3ac4b48ce1c12b33c63426c09abe435ed9"
+    },
+    {
+      "symbol": "q",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0071.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0071.mp3",
+      "bytes": 32600,
+      "sha256": "0af9be9e6ac150cbc3d35ad21743b34ec94cbec89921915a3d1ae8d03016924c"
+    },
+    {
+      "symbol": "r",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0072.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0072.mp3",
+      "bytes": 31346,
+      "sha256": "5075817f19bc4eadadf279c97ec97a1eab98414dc48f8b0ad9b82a2c3cad7cf9"
+    },
+    {
+      "symbol": "s",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0073.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0073.mp3",
+      "bytes": 33227,
+      "sha256": "e91fa27ba02070fe38b50ca316ec44a9c022a92327025d6226ef4b037dcfb996"
+    },
+    {
+      "symbol": "t",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0074.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0074.mp3",
+      "bytes": 36362,
+      "sha256": "d5f10bc0efc001c6df54e8376656c15bbf6b09fa27a404a47e5f655afcae38c7"
+    },
+    {
+      "symbol": "u",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0075.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0075.mp3",
+      "bytes": 21942,
+      "sha256": "7daa0c5e3e8cdbc2e78bcfcd584b2e9ae2b9cae5495fe7571c5a89f099de9f30"
+    },
+    {
+      "symbol": "v",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0076.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0076.mp3",
+      "bytes": 28839,
+      "sha256": "5aa01ab7bec583743d8c61607d9ba8daf64d8a4f8a6a10982bc68a0d8d9124d5"
+    },
+    {
+      "symbol": "w",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0077.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0077.mp3",
+      "bytes": 24450,
+      "sha256": "8942a854d4094859f433822b8ee8be16dbf752cbf1f59ed5c278ca5c019a3918"
+    },
+    {
+      "symbol": "x",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0078.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0078.mp3",
+      "bytes": 34481,
+      "sha256": "305ea0631584a299aa68a1236ec4ff23992c0af6fca599cf162657ab3b721538"
+    },
+    {
+      "symbol": "y",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0079.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0079.mp3",
+      "bytes": 21942,
+      "sha256": "f17d63ca5a18e3246144bf15037f3ad34ee76fc8ce503754c8f8badf7deb075f"
+    },
+    {
+      "symbol": "z",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/007A.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/007A.mp3",
+      "bytes": 33854,
+      "sha256": "189bee24eb4fa8e06f5d3722dbd9dd10703f1d8b7d6576116af9f4785260f35a"
+    },
+    {
+      "symbol": "æ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/00E6.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/00E6.mp3",
+      "bytes": 15673,
+      "sha256": "42b929199723184a4b8e4cc389c0818a59e693415ad403b353dd87d99689fd64"
+    },
+    {
+      "symbol": "ç",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/00E7.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/00E7.mp3",
+      "bytes": 32600,
+      "sha256": "ee9efb1db3e05b8810a6857ed0bbf6f05dd5b76ee99c5e9c9124c0b7c267289d"
+    },
+    {
+      "symbol": "ð",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/00F0.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/00F0.mp3",
+      "bytes": 35108,
+      "sha256": "45754f60fb578ab7f739112d0eea091ee6f40c1620d8e397cc09dff2e0a3157c"
+    },
+    {
+      "symbol": "ø",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/00F8.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/00F8.mp3",
+      "bytes": 18181,
+      "sha256": "83e0089bb6d08ba75c75ccf0137156670fcc10cff80648aa1738a641332f8e0f"
+    },
+    {
+      "symbol": "ħ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0127.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0127.mp3",
+      "bytes": 30720,
+      "sha256": "3fae484194d7034dc310407b3ef8a7458927c28133b62b78e64e5e447a12a1da"
+    },
+    {
+      "symbol": "ŋ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/014B.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/014B.mp3",
+      "bytes": 28839,
+      "sha256": "8df09c83d7e30f32e163d8c9d763c0f3a7038089a0c4e9f6c202eeb467c4912c"
+    },
+    {
+      "symbol": "œ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0153.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0153.mp3",
+      "bytes": 23196,
+      "sha256": "a5964a5720b81d667de40bfe58a44b7d5146b92bcf20d329bbd0d2cde731460b"
+    },
+    {
+      "symbol": "ǀ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/01C0.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/01C0.mp3",
+      "bytes": 21315,
+      "sha256": "075111580c642c7092725702e786c6cb3aa7aba8125cca733007b741da12441b"
+    },
+    {
+      "symbol": "ǁ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/01C1.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/01C1.mp3",
+      "bytes": 26958,
+      "sha256": "4bd6f2b2a563b7839d1d986a1cacc7742248892a60760f441249040bf98def99"
+    },
+    {
+      "symbol": "ǂ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/01C2.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/01C2.mp3",
+      "bytes": 20062,
+      "sha256": "0e8a2aa8f3bfe76aa7dc05840221514321ca74cc151ce527bb4aae51275a844c"
+    },
+    {
+      "symbol": "ǃ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/01C3.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/01C3.mp3",
+      "bytes": 27585,
+      "sha256": "e65070af5377623b28a5966a8b02c05f8c425f7fef517df14fc0ffa582f44f96"
+    },
+    {
+      "symbol": "ɐ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0250.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0250.mp3",
+      "bytes": 18181,
+      "sha256": "d35f8fa4c927126c413c339334ef42e214ef5f0a11627d18f8c3a23330eb635d"
+    },
+    {
+      "symbol": "ɑ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0251.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0251.mp3",
+      "bytes": 16927,
+      "sha256": "42dbbb111e4eafb304143452b319876c185f8147d6d17165e8ea847a4f3254a7"
+    },
+    {
+      "symbol": "ɒ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0252.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0252.mp3",
+      "bytes": 20689,
+      "sha256": "4a1851f436794ae82d5319690cda412a3a45868f5ce26e11c6909d3e2e847a68"
+    },
+    {
+      "symbol": "ɓ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0253.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0253.mp3",
+      "bytes": 25704,
+      "sha256": "6737246fcb0a37bbf9434d5647a68a8b7580f2610382970d42ee271a682b9c1e"
+    },
+    {
+      "symbol": "ɔ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0254.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0254.mp3",
+      "bytes": 21942,
+      "sha256": "36acc77ecb9d52752b8afc2c122fe78960cf4d0a09dbac5d1014803af5b97bb6"
+    },
+    {
+      "symbol": "ɕ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0255.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0255.mp3",
+      "bytes": 32600,
+      "sha256": "f363eedff9a3f5ed37314a04469fa9bc4cdb1676c9adc3d8dd7b13840737170a"
+    },
+    {
+      "symbol": "ɖ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0256.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0256.mp3",
+      "bytes": 31346,
+      "sha256": "95ace80acc60ececf9fb163b31b960621a194b132dcccf3d99723b0713cfa587"
+    },
+    {
+      "symbol": "ɗ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0257.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0257.mp3",
+      "bytes": 19435,
+      "sha256": "c408389cb42efa9ee8b26c783b0e2b71ccb1a53567b16bf5288542701926bb72"
+    },
+    {
+      "symbol": "ɘ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0258.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0258.mp3",
+      "bytes": 20062,
+      "sha256": "9d709c96525532819ef980b39dfcf7f92e93bbcbc734f60e999d46f51050f664"
+    },
+    {
+      "symbol": "ə",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0259.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0259.mp3",
+      "bytes": 18808,
+      "sha256": "98f7ad5b1a37ca2898a53065ddb7750be6be76aeba637dc9d0a5763b79b48492"
+    },
+    {
+      "symbol": "ɛ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/025B.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/025B.mp3",
+      "bytes": 20689,
+      "sha256": "13ec94867d96d8eca363f9cb4e3fe77f8971a9913d9225fce00ae5353da42ab0"
+    },
+    {
+      "symbol": "ɜ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/025C.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/025C.mp3",
+      "bytes": 17554,
+      "sha256": "7bec4d08044bba7b311e198ed8bbe3840d1c50d49b222aae63902772aa43e284"
+    },
+    {
+      "symbol": "ɞ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/025E.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/025E.mp3",
+      "bytes": 23823,
+      "sha256": "6a951d587244c9e6b2a621c12f44f88912a458c9aba5802b9a3191bed2104b77"
+    },
+    {
+      "symbol": "ɟ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/025F.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/025F.mp3",
+      "bytes": 31973,
+      "sha256": "e27053db162a6afae24e3ca25f06311478c7137443cc1dabca859d4ab68bf832"
+    },
+    {
+      "symbol": "ɠ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0260.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0260.mp3",
+      "bytes": 20689,
+      "sha256": "f61c8ff0a525b24d9e187cfc0062c74d9fceebf57db173b785a332057a587de1"
+    },
+    {
+      "symbol": "ɡ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0261.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0261.mp3",
+      "bytes": 30720,
+      "sha256": "248ae3bcf18b8d875ef1e1d47cb664b630e1742989e4cc330dfd4d7c6d4277f0"
+    },
+    {
+      "symbol": "ɢ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0262.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0262.mp3",
+      "bytes": 31973,
+      "sha256": "4fb4ef51969893503a722b65e5df8d9e1ab1db6fd21a9029a3ee8280724fdc51"
+    },
+    {
+      "symbol": "ɣ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0263.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0263.mp3",
+      "bytes": 31973,
+      "sha256": "28594754dc8667c77b71dd803e658b0ee16835a17aac5b2d75f00690b53b2783"
+    },
+    {
+      "symbol": "ɤ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0264.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0264.mp3",
+      "bytes": 20689,
+      "sha256": "f3c59d0784e945563dbd3bba46415b47e083e8794498b13b946931f220bb642c"
+    },
+    {
+      "symbol": "ɥ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0265.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0265.mp3",
+      "bytes": 38243,
+      "sha256": "b2e2f520210bb9a9e0492f41ba2e0e2fe715d339433cd2659f8089425c96e78a"
+    },
+    {
+      "symbol": "ɦ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0266.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0266.mp3",
+      "bytes": 31973,
+      "sha256": "3e305f62daa902c2272d6bdb5484be716d422d9bf1c0a69fd7e77bee95b2bd3f"
+    },
+    {
+      "symbol": "ɧ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0267.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0267.mp3",
+      "bytes": 35735,
+      "sha256": "712bf30e3bb8d480f206988c233466e56ffd46bad024950848dd583c93341a42"
+    },
+    {
+      "symbol": "ɨ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0268.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0268.mp3",
+      "bytes": 19435,
+      "sha256": "772531cb11b564d528e08b5c022fbc4997f657ba6c05aa346b318164729e7a4d"
+    },
+    {
+      "symbol": "ɪ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/026A.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/026A.mp3",
+      "bytes": 15673,
+      "sha256": "ab5e95ad4fc7d81599d5c5f58643bcbe157695a6161ea7e25bb8ef3073e6f243"
+    },
+    {
+      "symbol": "ɬ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/026C.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/026C.mp3",
+      "bytes": 33854,
+      "sha256": "5a161b073e86a98565ef948956a929777e4223de08349378f1cbb15c506d310e"
+    },
+    {
+      "symbol": "ɭ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/026D.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/026D.mp3",
+      "bytes": 34481,
+      "sha256": "0807d0b0e5ad64f21e0466fa531c8e78ac40afb251b6e7c275e6c50b12fee7a3"
+    },
+    {
+      "symbol": "ɮ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/026E.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/026E.mp3",
+      "bytes": 35108,
+      "sha256": "5c0a1e4e21fdbc25c243c2a9bbc415d011527277377337c9ab7fd3bb784fbe13"
+    },
+    {
+      "symbol": "ɯ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/026F.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/026F.mp3",
+      "bytes": 17554,
+      "sha256": "c1c5e8f6131b04b751189bbeb385bc209c088c3841340fd7df047fed27387314"
+    },
+    {
+      "symbol": "ɰ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0270.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0270.mp3",
+      "bytes": 27585,
+      "sha256": "36a5df4484d2aed4caf65f5d997e3a665bd892cca2eb2f58359b4994bde231c5"
+    },
+    {
+      "symbol": "ɱ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0271.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0271.mp3",
+      "bytes": 31346,
+      "sha256": "f98ba0317063eec426151e4e5e7a463f46a62ed113e46262b3b54a785d617121"
+    },
+    {
+      "symbol": "ɲ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0272.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0272.mp3",
+      "bytes": 26331,
+      "sha256": "f2b107cfa1a01ef322d23092a530470f4cca5ac4373b64cc8b9d440171a1d27a"
+    },
+    {
+      "symbol": "ɳ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0273.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0273.mp3",
+      "bytes": 31346,
+      "sha256": "0d2e000ebefd891fa8e93d77ec724f0ba2b3ad741f7380a05a1b4e223a724bb8"
+    },
+    {
+      "symbol": "ɴ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0274.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0274.mp3",
+      "bytes": 25704,
+      "sha256": "dddc296907550c7fc346c9f5573648051e9b3545830b114e975be49340d6d5da"
+    },
+    {
+      "symbol": "ɵ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0275.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0275.mp3",
+      "bytes": 15673,
+      "sha256": "a5dad5eb2435bf29867058a5a10eebbac6e80ab8b1c7946b3eb42666d7dce01e"
+    },
+    {
+      "symbol": "ɶ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0276.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0276.mp3",
+      "bytes": 23196,
+      "sha256": "a01940a4074e76caee1d775cf9b7e40a690a7e3a30e7355a9aa167fb1e4845d8"
+    },
+    {
+      "symbol": "ɸ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0278.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0278.mp3",
+      "bytes": 38870,
+      "sha256": "fd165133a22702c1c41a0085ab0b8be6a4b0572e42c2c8e997bbb3f2f6bd2141"
+    },
+    {
+      "symbol": "ɹ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0279.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0279.mp3",
+      "bytes": 34481,
+      "sha256": "caf7af425ddc7c07a4f03f9a070b2331cf8dc965e3484aa4a0ecd37a9104d904"
+    },
+    {
+      "symbol": "ɺ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/027A.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/027A.mp3",
+      "bytes": 27585,
+      "sha256": "74684195a0a4227c7fd73a58868966272af6b7076cb01df5079445a974382af2"
+    },
+    {
+      "symbol": "ɻ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/027B.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/027B.mp3",
+      "bytes": 25704,
+      "sha256": "c24e84e24503fc5338ffd40d34fb9e60ff7c5435b6a934919af873b8bdf085b5"
+    },
+    {
+      "symbol": "ɽ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/027D.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/027D.mp3",
+      "bytes": 28212,
+      "sha256": "adca22b37e49fdc591a5d2ca813aec212824e33876d13825d466fff137acf39c"
+    },
+    {
+      "symbol": "ɾ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/027E.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/027E.mp3",
+      "bytes": 16927,
+      "sha256": "e9500250e1415431ae159405813dee69370d8e40ab7d422bc513bc42b97bcaa1"
+    },
+    {
+      "symbol": "ʁ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0281.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0281.mp3",
+      "bytes": 35108,
+      "sha256": "eedf2f71db0fdb6359ed3f826e4224431e4cc12432fd925b23d9b964a5cc3f7f"
+    },
+    {
+      "symbol": "ʂ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0282.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0282.mp3",
+      "bytes": 32600,
+      "sha256": "fc6e29fba6c766c009d44b44c6c6c854ee5653065f3390b167caa90b19471131"
+    },
+    {
+      "symbol": "ʃ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0283.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0283.mp3",
+      "bytes": 38243,
+      "sha256": "671540e8ea1136cacaaae1ce05aeb192e78ad12a43499551182c67e5079870f9"
+    },
+    {
+      "symbol": "ʄ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0284.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0284.mp3",
+      "bytes": 27585,
+      "sha256": "538b4ced17b83da31507e2dd8c0a0ca3265f9e104ac241384549768480c23db7"
+    },
+    {
+      "symbol": "ʈ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0288.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0288.mp3",
+      "bytes": 31346,
+      "sha256": "ae587f86d9c51aae5c7acc3aeae691c33f4121eac0c844f606beb7e25007f6fd"
+    },
+    {
+      "symbol": "ʉ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0289.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0289.mp3",
+      "bytes": 19435,
+      "sha256": "cc69da8a0ce74f24f34c8fbc18ad1ca9327ebf480e5888c651b3e7d3956a9703"
+    },
+    {
+      "symbol": "ʊ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/028A.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/028A.mp3",
+      "bytes": 15046,
+      "sha256": "0a96e75141a268df444eb81e6dc276bf7a4d95a6bc272af32a17181e051bf453"
+    },
+    {
+      "symbol": "ʋ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/028B.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/028B.mp3",
+      "bytes": 35735,
+      "sha256": "a7c1391566c394e6dabbff246934a788fee1a4b8288d816e90e40d59bf8964af"
+    },
+    {
+      "symbol": "ʌ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/028C.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/028C.mp3",
+      "bytes": 17554,
+      "sha256": "b845bde842b4d1ff44845ad1905daab92ce2bfc0fb7f2156888cb3a7fa2861a7"
+    },
+    {
+      "symbol": "ʍ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/028D.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/028D.mp3",
+      "bytes": 35735,
+      "sha256": "1c2135eea495ac675804257bf266d7d4d43354b3c1558938a2b19f69aa86462d"
+    },
+    {
+      "symbol": "ʎ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/028E.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/028E.mp3",
+      "bytes": 27585,
+      "sha256": "b5fc26441971c4710f65973e8e365e4386240595768e46e68d62c1c14a4c8789"
+    },
+    {
+      "symbol": "ʏ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/028F.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/028F.mp3",
+      "bytes": 17554,
+      "sha256": "6adfffdca91e22faea921ebd3a1b9310e0973409392a6239a73574604b1864cd"
+    },
+    {
+      "symbol": "ʐ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0290.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0290.mp3",
+      "bytes": 35735,
+      "sha256": "9259513a4fd80513b2904d5deabb6ba341b5d1acffd084bdf9f0df320a8f1c3a"
+    },
+    {
+      "symbol": "ʑ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0291.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0291.mp3",
+      "bytes": 35108,
+      "sha256": "2877bb5db4e8a36bb43dbad6e56cd20a36382c9b3523d7e97cf6b61250a58d9e"
+    },
+    {
+      "symbol": "ʒ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0292.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0292.mp3",
+      "bytes": 36362,
+      "sha256": "f2027cf3b209b8f295708d5baf37bbcdde6436a1537a75da2c11ce9bf2183e53"
+    },
+    {
+      "symbol": "ʔ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0294.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0294.mp3",
+      "bytes": 28839,
+      "sha256": "e1c69f3858241097d46de63b23d71a607b7f1fcbc4f0fe8f9c8ca29e11fa10e2"
+    },
+    {
+      "symbol": "ʕ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0295.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0295.mp3",
+      "bytes": 31346,
+      "sha256": "ed55299b912ddac5e6b428cc833c10888e25f281e9dc986bfe19d2974103a8ba"
+    },
+    {
+      "symbol": "ʘ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0298.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0298.mp3",
+      "bytes": 27585,
+      "sha256": "c28425fda4721835e455175e9e4a12b7be3118e9840a544b32dd900b734c0357"
+    },
+    {
+      "symbol": "ʙ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0299.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0299.mp3",
+      "bytes": 30093,
+      "sha256": "72d44606a930345ed2533e38bf7a9734df22a5a6ad58f22d7082f7adfa06b7c0"
+    },
+    {
+      "symbol": "ʛ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/029B.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/029B.mp3",
+      "bytes": 29466,
+      "sha256": "aad42ca9c1d4276c971c752307f5fd44593ed5dcbae25c0dad6d87bec26e6f6d"
+    },
+    {
+      "symbol": "ʜ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/029C.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/029C.mp3",
+      "bytes": 30093,
+      "sha256": "aa6f6c223becf09f5d1f7e79e975d601edb0e5509cdec33b96fc8916cb57b4d8"
+    },
+    {
+      "symbol": "ʝ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/029D.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/029D.mp3",
+      "bytes": 35108,
+      "sha256": "472b0a6ed35b4e0c102115a9b239f08b3594f47db95badcb0d5d4818caeba271"
+    },
+    {
+      "symbol": "ʟ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/029F.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/029F.mp3",
+      "bytes": 29466,
+      "sha256": "3273f351beaa5559142837a81c7ccf4bb98cff29a1d83450108fcd6b55421485"
+    },
+    {
+      "symbol": "ʡ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/02A1.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/02A1.mp3",
+      "bytes": 26331,
+      "sha256": "82782c68bbecbf6d3a379f2470d67ae24761aaa295fde14429b7ca7064a89430"
+    },
+    {
+      "symbol": "ʢ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/02A2.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/02A2.mp3",
+      "bytes": 42004,
+      "sha256": "6324a1cd452069bac3c54b7110ea0a8b5145c8f7b2e8e63694f8a95f645b0407"
+    },
+    {
+      "symbol": "̂",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0302.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0302.mp3",
+      "bytes": 24450,
+      "sha256": "27ca14176dae3ae482bcb95229234cc986dcc6c595ef439d461ee0f9893a3642"
+    },
+    {
+      "symbol": "̊",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/030A.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/030A.mp3",
+      "bytes": 35108,
+      "sha256": "e7cd3a144ffd17567c7b017ce65b15d68b60faacd8ef5b172d98e72e1f5ad291"
+    },
+    {
+      "symbol": "̌",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/030C.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/030C.mp3",
+      "bytes": 26958,
+      "sha256": "55fc15d5dfad975c2c6742cb53d0e62e65f23f38b75f372ad410391a1a262728"
+    },
+    {
+      "symbol": "̤",
+      "speaker": "JH",
+      "variant": 3,
+      "relative": "assets/audio/JH/0324_3.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0324_3.mp3",
+      "bytes": 40124,
+      "sha256": "4a037e3afbf83bbe21d625e19d647ac1ac55adc023374eb133852616d91fb9e9"
+    },
+    {
+      "symbol": "̥",
+      "speaker": "JH",
+      "variant": 1,
+      "relative": "assets/audio/JH/0325_1.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0325_1.mp3",
+      "bytes": 33854,
+      "sha256": "e761ab13229a811dccef9d710253c6cf89901f27bbbe417921d42f9f16e824f6"
+    },
+    {
+      "symbol": "̥",
+      "speaker": "JH",
+      "variant": 2,
+      "relative": "assets/audio/JH/0325_2.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0325_2.mp3",
+      "bytes": 28839,
+      "sha256": "4a0127594d2a97f9ec89f0f04447cb6428e3f6a20b2fb786de1e7e4795a8ae6f"
+    },
+    {
+      "symbol": "̥",
+      "speaker": "JH",
+      "variant": 3,
+      "relative": "assets/audio/JH/0325_3.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0325_3.mp3",
+      "bytes": 35108,
+      "sha256": "e7cd3a144ffd17567c7b017ce65b15d68b60faacd8ef5b172d98e72e1f5ad291"
+    },
+    {
+      "symbol": "̬",
+      "speaker": "JH",
+      "variant": 1,
+      "relative": "assets/audio/JH/032C_1.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/032C_1.mp3",
+      "bytes": 32600,
+      "sha256": "2054fc1258a695df86342bec3ab20ecf691d0f2a8e33babf30292b72d34d45ab"
+    },
+    {
+      "symbol": "͜",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/035C.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/035C.mp3",
+      "bytes": 33854,
+      "sha256": "002923fdeb985bf8b12ca5f1b176383684fb3761b17bfd0e5389a277bd0c2c3e"
+    },
+    {
+      "symbol": "͡",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/0361.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/0361.mp3",
+      "bytes": 29466,
+      "sha256": "a96495c9dcbafd1d9f2074da0905be41b5ef224717dc3033c5ed9a40db1ccb05"
+    },
+    {
+      "symbol": "β",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/03B2.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/03B2.mp3",
+      "bytes": 40751,
+      "sha256": "c092a9cf0634961ae1f62864f84a263441e8f0666cd9d89a3dfff4bd6d43589b"
+    },
+    {
+      "symbol": "θ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/03B8.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/03B8.mp3",
+      "bytes": 35108,
+      "sha256": "eb731ec6a33763e1b7178781d2afdf9cacf2f723139df5150230e45d6d6ba730"
+    },
+    {
+      "symbol": "χ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/03C7.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/03C7.mp3",
+      "bytes": 34481,
+      "sha256": "810a30d8653fc368eababbbba4769b304db7047c0163a35474fb5548dcb40d59"
+    },
+    {
+      "symbol": "᷈",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/1DC8.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/1DC8.mp3",
+      "bytes": 26958,
+      "sha256": "f9a696322b09378cdd01e99b513d44dcd5d41f82deebb25da9a92140b3b19383"
+    },
+    {
+      "symbol": "↘",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/2198.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/2198.mp3",
+      "bytes": 42004,
+      "sha256": "228399f22656e115c50b39ef7cdf0a399fd92abd2e1482c75b56796828b8b835"
+    },
+    {
+      "symbol": "ꜛ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/A71B.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/A71B.mp3",
+      "bytes": 52662,
+      "sha256": "de698931be25573d87f8376a08f97b26ad11aebec4d2b7693142976be3a66d5c"
+    },
+    {
+      "symbol": "ꜜ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/A71C.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/A71C.mp3",
+      "bytes": 52662,
+      "sha256": "081f7e078f0cea99bc2ba65230141f930c20279d4bc478a9941f37ea08548a9f"
+    }
+  ],
+  "unavailable": [
+    {
+      "symbol": "ɚ",
+      "speaker": "JH",
+      "variant": 0,
+      "relative": "assets/audio/JH/025A.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JH/025A.mp3"
+    },
+    {
+      "symbol": "ɚ",
+      "speaker": "JE",
+      "variant": 0,
+      "relative": "assets/audio/JE/025A.mp3",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/sounds/JE/025A.mp3"
+    }
+  ]
+}

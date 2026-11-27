@@ -1,0 +1,48 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/server.mjs",
+      "args": ["--preview"],
+      "noDebug": true,
+      "console": "integratedTerminal",
+      "serverReadyAction": {
+        "pattern": "(https?://localhost:\\d+\\S*)",
+        "uriFormat": "%s",
+        "action": "openExternally"
+      }
+    },
+    {
+      "name": "Debug",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/server.mjs",
+      "args": ["--preview"],
+      "console": "integratedTerminal",
+      "serverReadyAction": {
+        "pattern": "(https?://localhost:\\d+\\S*)",
+        "uriFormat": "%s",
+        "action": "debugWithEdge",
+        "webRoot": "${workspaceFolder}/src"
+      }
+    },
+    {
+      "name": "Word dev server (then npm run sideload)",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/server.mjs",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Debug tests",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": ["--test", "--experimental-test-isolation=none"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    }
+  ]
+}

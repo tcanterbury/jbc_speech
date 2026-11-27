@@ -1,0 +1,35 @@
+# Dependencies and the project-local npm cache
+node_modules/
+.npm-cache/
+
+# Logs and debug output
+*.log
+npm-debug.log*
+
+# Secrets and local environment
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+
+# Test / coverage output
+coverage/
+.nyc_output/
+
+# Editor: keep shared launch/tasks configs, ignore personal settings
+.vscode/*
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/extensions.json
+*.code-workspace
+.idea/
+
+# OS clutter
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Office / Word lock and temp files (e.g. while testing in a .docx)
+~$*
+*.tmp
