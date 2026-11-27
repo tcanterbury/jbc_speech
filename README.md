@@ -49,6 +49,25 @@ One-time setup on GitHub:
 
 `npm.cmd run build:web` builds the same site locally into `dist/web`.
 
+### Where the hosted manifest goes
+
+- **Personal Windows PC, easiest:** the **online installer**, `https://tcanterbury.github.io/jbc_speech/downloads/JBC-Speech-online.zip` (6 KB, linked from the landing page). It saves the hosted manifest to `%LOCALAPPDATA%\JBC Speech (online)`, registers it with Word (the same registry value as `npm run sideload`) and adds a Settings → Apps uninstall entry. There's no server, certificate or Node. Sources are in `installer/online/`; `scripts/build-web.mjs` zips them with the site's manifest on every deploy.
+
+For the routes below, download `https://tcanterbury.github.io/jbc_speech/manifest.xml` (right-click → Save link as). Menu labels vary a little between Word versions.
+
+- **Work PC managed by IT:** IT uploads the manifest from the Microsoft 365 admin center (Settings → Integrated apps → Upload custom apps). Forward `docs/IT-deployment.md`.
+- **Word on Windows, adding it yourself (shared-folder catalog):**
+  1. Put `manifest.xml` in its own folder, for example `C:\JBC Speech manifest`.
+  2. Share that folder: right-click it → Properties → Sharing → Share. Note the network path it shows, for example `\\HER-PC\JBC Speech manifest`.
+  3. In Word, go to File → Options → Trust Center → Trust Center Settings → Trusted Add-in Catalogs.
+  4. Paste the network path into **Catalog Url**, click **Add catalog**, tick **Show in Menu**, click OK, and restart Word.
+  5. Go to Home → Add-ins → More Add-ins (or Advanced) → **SHARED FOLDER**, choose **JBC Speech**, and click **Add**.
+
+  The catalog must be a network (`\\…`) path, not `C:\…`. Company policy can turn this setting off.
+- **Word on the web:** go to Home → Add-ins → More Add-ins (or Advanced) → **MY ADD-INS** → **Upload My Add-in**, then choose `manifest.xml`. Microsoft intends this for testing, and the add-in can disappear when browser data is cleared.
+
+The installer zip doesn't need any of this: it registers its own manifest.
+
 There are three copies of the add-in, each with its own ID (in `scripts/manifest-variant.mjs`), so they can be installed side by side:
 
 | Copy | Loads from | Used for |
