@@ -12,8 +12,7 @@
     "sideload": "office-addin-debugging start manifest.xml desktop --app word --dev-server-port 3000 --no-debug --no-live-reload",
     "unsideload": "office-addin-debugging stop manifest.xml",
     "package": "node scripts/package.mjs",
-    "build:web": "node scripts/build-web.mjs",
-    "feedback:deploy": "cd worker && npx wrangler@4 deploy"
+    "build:web": "node scripts/build-web.mjs"
   },
   "devDependencies": {
     "office-addin-debugging": "^7.0.1",

@@ -37,6 +37,9 @@ desktop.ini
 # Packaged installer output (npm run package)
 dist/
 
-# Cloudflare Worker local state
-worker/.wrangler/
-worker/node_modules/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example

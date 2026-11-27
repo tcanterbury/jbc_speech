@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Homepage Spec</title>
+<style>
+:root{--ink:#183b40;--muted:#688079;--line:#dce6e2;--teal:#268274;--bg:#f6f8f7;--card:#fff;--night:#0a1524;--marker:#ffd84d;--gh:#24292f}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#dbe9e5;--muted:#93aaa3;--line:#2c3d39;--bg:#121a18;--card:#1a2422}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 "Segoe UI",system-ui,sans-serif}
+.hero{background:linear-gradient(135deg,#0a1524,#0f2337 60%,#0d3133);color:#e9f4f1;padding:36px 18px 30px;border-bottom:4px solid var(--marker)}
+.hero .in,.wrap{max-width:1040px;margin:0 auto}
+.wrap{padding:8px 18px 80px}
+.hero h1{font-size:38px;margin:0 0 6px;letter-spacing:-.8px}
+.hero p{margin:0;color:#a9c4bd;max-width:70ch}
+.hl{background:var(--marker);color:var(--night);padding:0 .15em;border-radius:3px}
+h2{font-size:21px;margin:42px 0 12px;display:flex;align-items:center;gap:10px}
+h2 .n{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--teal);color:#fff;font-size:14px}
+p{max-width:76ch}
+figure{margin:0}
+figure img{display:block;max-width:100%;height:auto;border-radius:10px;border:1px solid var(--line);box-shadow:0 8px 26px rgba(0,0,0,.12)}
+figcaption{font-size:12px;color:var(--muted);margin-top:6px}
+.map{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.map div{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--c,var(--teal));border-radius:10px;padding:12px 14px}
+.map b{display:block}
+.map span{font-size:13px;color:var(--muted)}
+svg text{fill:currentColor}
+.diagram{width:100%;height:auto;background:var(--card);border:1px solid var(--line);border-radius:12px}
+.dropped{border:2px dashed var(--line);border-radius:12px;padding:14px 16px;color:var(--muted);max-width:76ch}
+.dropped b{color:var(--ink)}
+code{background:color-mix(in srgb,var(--teal) 12%,transparent);padding:1px 5px;border-radius:4px;font-size:13px}
+</style>
+</head>
+<body>
+<div class="hero"><div class="in">
+  <h1>The <span class="hl">homepage</span></h1>
+  <p>A bold landing page for SLPs, teachers and students, with a live transcription demo that plays the real recordings. Feedback goes to GitHub issues. 27 Nov 2026.</p>
+</div></div>
+<div class="wrap">
+
+<h2><span class="n">1</span>What it looks like</h2>
+<figure><img src="images/homepage.png" width="1024" height="720" alt="Homepage hero: dark chalkboard background, highlighted headline 'Type the sounds of speech', a mock Word document typing a transcription, symbol chips, a waveform and the stats strip"><figcaption>Real screenshot of the built site. The document types /ˈtiːtʃɚ/, /spiːtʃ/ … on a loop; the chips type into "Your turn" and play Esling/House recordings when Sound is on.</figcaption></figure>
+
+<h2><span class="n">2</span>The page, top to bottom</h2>
+<div class="map">
+  <div style="--c:var(--night)"><b>Nav</b><span>Dark, sticky, logo on a white pill. The yellow <b>Install</b> button jumps to the install steps.</span></div>
+  <div style="--c:var(--night)"><b>Hero</b><span>Chalkboard grid, drifting IPA glyphs, a highlighter headline, two buttons.</span></div>
+  <div style="--c:var(--marker)"><b>Live demo</b><span>A mock Word doc types real transcriptions; symbol chips type and play the real recordings.</span></div>
+  <div style="--c:var(--teal)"><b>Waveform + stats</b><span>A syllable-shaped animated waveform; counts from the add-in's own data.</span></div>
+  <div style="--c:var(--teal)"><b>Features</b><span>Six cards aimed at SLPs, ending with "Private by design".</span></div>
+  <div style="--c:var(--teal)"><b>Chart view showcase</b><span>A framed real screenshot of the Chart view.</span></div>
+  <div style="--c:var(--marker)"><b>Add to Word</b><span>A full-width accordion: online installer (open), IT, shared folder, web.</span></div>
+  <div style="--c:var(--gh)"><b>Feedback band</b><span>Request a feature or report a bug: opens the GitHub issue forms.</span></div>
+  <div style="--c:var(--marker)"><b>Thanks</b><span>Esling &amp; House, the IPA, and the tools behind it.</span></div>
+</div>
+<p style="font-size:14px">System fonts only, with no trackers. Animations switch off for visitors who've set their system to reduce motion. On phones the nav shrinks to the Install button.</p>
+
+<h2><span class="n">3</span>Feedback: straight to GitHub</h2>
+<svg class="diagram" viewBox="0 0 1000 150" role="img" aria-label="Pane, help, credits and homepage links open GitHub issue templates">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="currentColor"/></marker></defs>
+  <g font-size="14" text-anchor="middle">
+    <rect x="20" y="35" width="420" height="80" rx="12" fill="#0f2337"/><text x="230" y="68" font-weight="700" style="fill:#fff">Request a feature · Report a bug</text>
+    <text x="230" y="92" style="fill:#a9c4bd" font-size="12">pane footer · help · credits · homepage · feedback page · README</text>
+    <rect x="600" y="35" width="380" height="80" rx="12" fill="var(--gh)"/><text x="790" y="68" font-weight="700" style="fill:#fff">GitHub issue template</text>
+    <text x="790" y="92" style="fill:#ffd84d" font-size="12">feature_request.md · bug_report.md</text>
+  </g>
+  <path d="M444 75H594" stroke="currentColor" stroke-width="2" marker-end="url(#a)"/>
+  <text x="520" y="64" font-size="12" text-anchor="middle">opens</text>
+</svg>
+<p>The <code>feedback.html</code> page warns people not to include client or patient information, because issues are public. GitHub needs a free account.</p>
+
+<div class="dropped"><b>Tried and dropped:</b> a site form that filed issues through a Cloudflare Worker, so people wouldn't need a GitHub account. Cloudflare's dashboard import served the homepage files instead of running the Worker, and it wasn't worth more setup. The code is in git history (commit <code>48e67fd</code>). If it's ever revisited, the Cloudflare build must use <code>worker/</code> as its root directory.</div>
+</div>
+</body>
+</html>
