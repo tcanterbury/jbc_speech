@@ -15,7 +15,47 @@ Requires Node.js 22 or newer and a supported Word installation. Microsoft docume
 
 The source files are served directly; no build step is necessary. Stop the server with Ctrl+C. Run `npm.cmd run unsideload` to remove the development registration. Organizational Office policies may prevent sideloading; in that case an administrator must deploy the add-in.
 
-This is a local development setup, not a standalone installer. Keep the server running while using the add-in. To deploy to other users, serve `src/` from a stable HTTPS host, replace every `https://localhost:3000` URL in `manifest.xml`, validate the updated manifest, and deploy through your organization's Microsoft 365 add-in administration process. Pane visibility is scoped to the current document session; no automatic reopening on future Word launches is configured.
+This is the development setup: keep the server running while using the add-in. To install on another Windows PC without Node or the dev tools, see **Install on another PC** below. Pane visibility is scoped to the current document session; no automatic reopening on future Word launches is configured.
+
+## Install on another PC (packaged)
+
+`npm.cmd run package` builds `dist/JBC-Speech-<version>.zip` (about 38 MB). Copy it to the other PC, unzip, close Word, and double-click **Install JBC Speech.cmd**. `READ ME.txt` in the zip is written for the person installing it.
+
+The installer runs per user, with no admin rights, and installs to `%LOCALAPPDATA%\JBC Speech`. It:
+
+1. Checks that Word is build 15202 (version 2205) or newer.
+2. Copies a portable `node.exe` (the one that ran the build), `src/`, `server.mjs` and a manifest for the installed copy.
+3. Creates a self-signed `localhost` certificate in the user's store and trusts it. Windows asks the user to confirm once.
+4. Adds a Startup shortcut that runs the server hidden on port 44391, and starts the server immediately.
+5. Registers the manifest under `HKCU\Software\Microsoft\Office\16.0\WEF\Developer`, the same mechanism `npm run sideload` uses.
+6. Adds an uninstall entry to Settings → Apps.
+
+Re-running a newer installer updates the files and keeps the certificate. The installed copy has its own add-in ID and port, so it can sit beside your dev sideload. Word still needs internet when the pane opens, because Office.js loads from Microsoft's CDN.
+
+Installer sources are in `installer/`; the build script is `scripts/package.mjs`. Design notes: `docs/packaging.md`. Keep `installer/*.ps1` ASCII-only: Windows PowerShell 5.1 misreads UTF-8 without a BOM, and the build checks this.
+
+## Hosted copy (GitHub Pages)
+
+Every push to `main` runs `.github/workflows/pages.yml`, which runs the tests and publishes the site to **https://tcanterbury.github.io/jbc_speech/**:
+- `src/` as-is;
+- `manifest.xml`, pointing at the site, with its own add-in ID;
+- `index.html`, a landing page with a browser demo.
+
+This is the option for a work PC managed by IT. Nothing is installed: IT deploys `https://tcanterbury.github.io/jbc_speech/manifest.xml` from the Microsoft 365 admin center. See `docs/IT-deployment.md`, a note written for IT. Anyone with the URL can open the site.
+
+One-time setup on GitHub:
+1. Make the repo public (Settings → General → Danger Zone → Change visibility).
+2. Under Settings → Pages → Build and deployment → Source, choose **GitHub Actions**.
+
+`npm.cmd run build:web` builds the same site locally into `dist/web`.
+
+There are three copies of the add-in, each with its own ID (in `scripts/manifest-variant.mjs`), so they can be installed side by side:
+
+| Copy | Loads from | Used for |
+|---|---|---|
+| dev | `https://localhost:3000` | `npm start` + `npm run sideload` |
+| installed | `https://localhost:44391` | The Windows installer zip |
+| web | GitHub Pages | IT deployment or Word on the web |
 
 ## Insert symbols
 
@@ -79,7 +119,9 @@ The current Microsoft development tools retain five transitive npm audit finding
 - `src/taskpane.*`: sidebar, List view and interactions.
 - `src/chart-layout.js`, `src/chart-view.js`: Chart view data and rendering. `tests/chart.test.mjs` checks the chart and the inventory contain the same symbols.
 - `src/word-actions.js`: Word insertion and toggle logic.
-- `scripts/server.mjs`: local HTTP preview / HTTPS development server; serves only `src/`.
+- `scripts/server.mjs`: local HTTP preview / HTTPS development server; serves only `src/`. With `--config` it runs the installed copy (port and certificate from `jbc-speech.json`); `--background` starts it hidden unless it's already running.
+- `scripts/package.mjs`, `installer/`: the Windows installer zip (see **Install on another PC**).
+- `scripts/build-web.mjs`, `.github/workflows/pages.yml`: the GitHub Pages site (see **Hosted copy**). `scripts/manifest-variant.mjs` holds the IDs and URLs of all three copies.
 - `src/assets/jbc_speech.png`: supplied full logo, displayed in the sidebar. The ribbon uses `jbc-icon-16.png`, `jbc-icon-32.png`, and `jbc-icon-80.png`, exported from its speech-bubble mark. Run `powershell -ExecutionPolicy Bypass -File scripts/build-icons.ps1` to regenerate these sizes; the crop rectangle is specific to this logo.
 
 The inventory uses Unicode characters organized by phonetic properties, with the [International Phonetic Association's standard categories](https://www.internationalphoneticassociation.org/content/ipa-chart) as reference. It does not reproduce their chart artwork and is not endorsed by the Association. See Microsoft's [shared runtime setup](https://learn.microsoft.com/en-us/office/dev/add-ins/develop/configure-your-add-in-to-use-a-shared-runtime) and [show/hide documentation](https://learn.microsoft.com/en-us/office/dev/add-ins/develop/show-hide-add-in) for the pane behavior.

@@ -1,0 +1,37 @@
+JBC Speech - IPA library for Microsoft Word
+============================================
+
+INSTALL
+1. Unzip this folder (right-click > Extract All). Don't run it from inside the zip.
+2. Close Word.
+3. Double-click "Install JBC Speech.cmd".
+   - If Windows says "Windows protected your PC", click "More info", then "Run anyway".
+   - Windows will ask "Do you want to install this certificate?" for "localhost".
+     Click YES. It only lets Word talk to the library running on this PC.
+4. Open Word. Choose the JBC Speech tab, then IPA Library.
+
+USING IT
+- Click in your document, then click a symbol to insert it.
+- Shift-click a symbol (marked with a music note) to hear it.
+- The List | Chart switch at the top changes the layout. Widen the pane to see the
+  whole consonant chart at once.
+- For the best-looking symbols, use an IPA font such as Doulos SIL or Charis SIL.
+- Word needs an internet connection when the library opens (Microsoft's add-in code
+  loads from the web). The symbols and recordings themselves are on this PC.
+
+IF THE LIBRARY SAYS IT CAN'T LOAD
+The library runs quietly in the background and starts when you sign in to Windows.
+Start menu > JBC Speech > "Start JBC Speech server", then reopen the library in Word.
+
+UPDATE
+Run the newer "Install JBC Speech.cmd" the same way. Your settings are kept.
+
+UNINSTALL (any one of these; nothing to type)
+- Open the Settings app, click Apps, then Installed apps. Find JBC Speech, click the
+  "..." button next to it, then Uninstall.
+  (Windows 10: Settings > Apps > Apps & features > click JBC Speech > Uninstall.)
+- Or open the Start menu, find the JBC Speech folder, and click "Uninstall JBC Speech".
+- Or double-click "Uninstall JBC Speech.cmd" in this folder.
+
+Audio: John Esling & Jill House, from the IPA's interactive chart (CC BY-NC-ND 4.0).
+See "Credits & license" at the bottom of the library.

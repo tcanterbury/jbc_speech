@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Packaging Spec</title>
+<style>
+:root{--ink:#183b40;--muted:#688079;--line:#dce6e2;--teal:#268274;--bg:#f6f8f7;--card:#fff;
+  --word:#2b579a;--node:#5fa04e;--cert:#c9801f;--reg:#8a4fb0;--files:#268274}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#dbe9e5;--muted:#93aaa3;--line:#2c3d39;--bg:#121a18;--card:#1a2422}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 "Segoe UI",system-ui,sans-serif}
+.wrap{max-width:1040px;margin:0 auto;padding:28px 18px 80px}
+header{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+header img{width:170px;height:auto;background:#fff;border-radius:12px;padding:10px}
+h1{font-size:34px;margin:0;letter-spacing:-.8px}
+h1 small{display:block;font-size:14px;color:var(--muted);font-weight:400;letter-spacing:0}
+h2{font-size:20px;margin:44px 0 12px;display:flex;align-items:center;gap:10px}
+h2 .n{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--teal);color:#fff;font-size:14px}
+p{max-width:75ch}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.callout{border-left:5px solid var(--cert);background:color-mix(in srgb,var(--cert) 10%,var(--card));padding:12px 16px;border-radius:8px;max-width:75ch}
+svg text{fill:currentColor}
+.diagram{width:100%;height:auto;background:var(--card);border:1px solid var(--line);border-radius:12px}
+.steps{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.steps details{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--c);border-radius:10px;padding:10px 14px}
+.steps summary{cursor:pointer;font-weight:650}
+.steps summary span{font-weight:400;color:var(--muted);margin-left:6px;font-size:13px}
+.steps details p{margin:8px 0 2px;font-size:14px}
+.tree{font:13px/1.6 Consolas,monospace;white-space:pre;overflow-x:auto}
+.tree b{color:var(--teal)}
+.tree i{color:var(--muted);font-style:normal}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.check li{margin:5px 0}
+.check li::marker{content:'✔  ';color:var(--teal)}
+.todo li::marker{content:'○  ';color:var(--cert)}
+code{background:color-mix(in srgb,var(--teal) 10%,transparent);padding:1px 5px;border-radius:4px;font-size:13px}
+.pill{display:inline-block;font-size:12px;font-weight:700;padding:2px 9px;border-radius:99px;color:#fff}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <img src="../src/assets/jbc_speech.png" alt="JBC Speech logo">
+  <h1>Packaging for her PC <small>A double-click installer, everything local · Windows · 26 Nov 2026</small></h1>
+</header>
+
+<p>One zip file (<b>~38 MB</b>). She unzips it, closes Word and double-clicks <b>Install JBC Speech</b>. Windows asks one question about a certificate (she clicks Yes), and the <b>JBC Speech</b> tab appears in Word. Nothing is hosted online, she doesn't need Node, and no admin rights are required.</p>
+
+<div class="callout"><b>Why there's a server at all:</b> a Word add-in pane is a little web page, and Word only opens it from an <b>https://</b> address. So "fully local" means a tiny web server on her PC, plus a certificate that Windows trusts for <code>localhost</code>. Microsoft's add-in library (Office.js) still loads from the web, so Word needs internet when the pane opens.</div>
+
+<h2><span class="n">1</span>How the pieces connect on her PC</h2>
+<svg class="diagram" viewBox="0 0 1000 380" role="img" aria-label="Diagram: Word reads the manifest from the registry, loads the pane from the local Node server over HTTPS, trusted by the localhost certificate">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="currentColor"/></marker></defs>
+  <g font-size="14">
+    <!-- Word -->
+    <rect x="30" y="40" width="220" height="120" rx="12" fill="var(--word)"/>
+    <text x="140" y="80" text-anchor="middle" font-weight="700" fill="#fff" style="fill:#fff" font-size="18">Word</text>
+    <text x="140" y="106" text-anchor="middle" style="fill:#fff">JBC Speech tab</text>
+    <text x="140" y="128" text-anchor="middle" style="fill:#fff">→ IPA Library pane</text>
+    <!-- Registry -->
+    <rect x="30" y="230" width="220" height="110" rx="12" fill="none" stroke="var(--reg)" stroke-width="3"/>
+    <text x="140" y="262" text-anchor="middle" font-weight="700" style="fill:var(--reg)">Registry (HKCU)</text>
+    <text x="140" y="286" text-anchor="middle" font-size="12">WEF\Developer</text>
+    <text x="140" y="304" text-anchor="middle" font-size="12">add-in ID → manifest.xml</text>
+    <text x="140" y="322" text-anchor="middle" font-size="12">+ Settings → Apps entry</text>
+    <!-- Node server -->
+    <rect x="400" y="40" width="250" height="120" rx="12" fill="var(--node)"/>
+    <text x="525" y="78" text-anchor="middle" font-weight="700" style="fill:#fff" font-size="17">Local server</text>
+    <text x="525" y="102" text-anchor="middle" style="fill:#fff">node.exe server.mjs</text>
+    <text x="525" y="124" text-anchor="middle" style="fill:#fff">https://localhost:44391</text>
+    <text x="525" y="146" text-anchor="middle" style="fill:#fff" font-size="12">hidden · starts at sign-in</text>
+    <!-- Cert -->
+    <rect x="400" y="230" width="250" height="110" rx="12" fill="none" stroke="var(--cert)" stroke-width="3"/>
+    <text x="525" y="262" text-anchor="middle" font-weight="700" style="fill:var(--cert)">localhost certificate</text>
+    <text x="525" y="286" text-anchor="middle" font-size="12">made on her PC, 5 years</text>
+    <text x="525" y="304" text-anchor="middle" font-size="12">server uses cert/localhost.pfx</text>
+    <text x="525" y="322" text-anchor="middle" font-size="12">Windows trusts it (one Yes)</text>
+    <!-- Files -->
+    <rect x="780" y="40" width="190" height="120" rx="12" fill="none" stroke="var(--files)" stroke-width="3"/>
+    <text x="875" y="78" text-anchor="middle" font-weight="700" style="fill:var(--files)">Pane files</text>
+    <text x="875" y="102" text-anchor="middle" font-size="12">taskpane.html / .js / .css</text>
+    <text x="875" y="122" text-anchor="middle" font-size="12">244 MP3 recordings</text>
+    <text x="875" y="142" text-anchor="middle" font-size="12">%LOCALAPPDATA%\JBC Speech</text>
+    <!-- CDN -->
+    <rect x="780" y="230" width="190" height="110" rx="12" fill="none" stroke="var(--muted)" stroke-dasharray="6 5" stroke-width="2"/>
+    <text x="875" y="270" text-anchor="middle" font-weight="700">Microsoft CDN</text>
+    <text x="875" y="294" text-anchor="middle" font-size="12">office.js (internet)</text>
+  </g>
+  <g stroke="currentColor" stroke-width="2" fill="none">
+    <path d="M140 225 V165" marker-end="url(#a)"/>
+    <path d="M255 100 H395" marker-end="url(#a)"/>
+    <path d="M655 100 H775" marker-end="url(#a)"/>
+    <path d="M525 225 V165" marker-end="url(#a)" stroke-dasharray="5 4"/>
+    <path d="M250 150 C 420 210, 640 240, 775 280" marker-end="url(#a)" stroke-dasharray="5 4" opacity=".6"/>
+  </g>
+  <g font-size="12">
+    <text x="150" y="200">1 · finds manifest</text>
+    <text x="268" y="90">2 · loads pane (HTTPS)</text>
+    <text x="664" y="90">3 · reads files</text>
+    <text x="535" y="200">trusted because of…</text>
+  </g>
+</svg>
+
+<h2><span class="n">2</span>What the installer does <span style="font-size:13px;color:var(--muted);font-weight:400">(click a step)</span></h2>
+<ul class="steps">
+  <li><details style="--c:var(--word)"><summary>Check Word <span>build ≥ 15202 (version 2205)</span></summary><p>Reads <code>VersionToReport</code> from Office's Click-to-Run settings. If Word is too old it stops and says how to update. It also waits until Word is closed.</p></details></li>
+  <li><details style="--c:var(--files)"><summary>Copy files <span>→ %LOCALAPPDATA%\JBC Speech</span></summary><p>Stops an old server if one is running, replaces <code>src</code>, <code>scripts</code> and <code>node</code>, and keeps the certificate and log. Removes the "downloaded from internet" flag from the files.</p></details></li>
+  <li><details style="--c:var(--cert)"><summary>Certificate <span>one Windows prompt: click Yes</span></summary><p>Creates a <code>localhost</code> certificate in her personal store and exports it for the server with a random passphrase. Then adds it to her trusted roots, which is when Windows asks. If she clicks No, the installer explains and stops. On reinstall the same certificate is reused, so there's no second prompt.</p></details></li>
+  <li><details style="--c:var(--node)"><summary>Start the server <span>Startup shortcut + start now</span></summary><p>Shortcuts in Startup and the Start menu run <code>node.exe server.mjs --config jbc-speech.json --background</code>. The launcher exits straight away and leaves a hidden server running, unless one is already running. The installer then fetches the page over HTTPS to prove the certificate is trusted.</p></details></li>
+  <li><details style="--c:var(--reg)"><summary>Register <span>Word + Settings → Apps</span></summary><p>Adds one value under <code>WEF\Developer</code> (add-in ID → manifest path), the same thing <code>npm run sideload</code> does. Also adds an Apps entry so she can uninstall it like any program.</p></details></li>
+</ul>
+
+<h2><span class="n">3</span>What's in the zip</h2>
+<div class="grid2">
+<div class="card tree"><b>JBC-Speech/</b>
+├─ Install JBC Speech.cmd   <i>← she double-clicks this</i>
+├─ Uninstall JBC Speech.cmd
+├─ READ ME.txt              <i>← written for her</i>
+├─ install.ps1
+└─ <b>app/</b>                     <i>→ %LOCALAPPDATA%\JBC Speech</i>
+   ├─ node/node.exe         <i>portable Node 22, 83 MB</i>
+   ├─ scripts/server.mjs
+   ├─ src/…                 <i>the pane + audio</i>
+   ├─ manifest.xml          <i>port 44391, own ID</i>
+   ├─ jbc-speech.json
+   └─ uninstall.ps1</div>
+<div class="card">
+  <p style="margin-top:0"><b>Two copies, no clash.</b> On your PC the dev sideload and the installed copy can live side by side:</p>
+  <p><span class="pill" style="background:var(--word)">dev</span> ID <code>bed7004a…</code> · port 3000 · your <code>npm start</code></p>
+  <p><span class="pill" style="background:var(--node)">installed</span> ID <code>a1dbced0…</code> · port 44391 · Startup shortcut</p>
+  <p style="margin-bottom:0"><b>Updating her copy:</b> bump the version in <code>package.json</code>, run <code>npm.cmd run package</code>, then run the new installer on her PC.</p>
+</div>
+</div>
+
+<h2><span class="n">4</span>Plan B: hosted on GitHub Pages</h2>
+<p>A work PC managed by IT may block the installer: restricted PowerShell, programs blocked in user folders, certificate rules, or add-in policies. Installing a background server there needs IT's OK anyway. So the same pane is also published to GitHub Pages, and IT only has to deploy one manifest URL.</p>
+<div class="grid2">
+  <div class="card" style="border-top:6px solid var(--node)">
+    <p style="margin-top:0"><span class="pill" style="background:var(--node)">Installer</span> <b>personal PC</b></p>
+    <ul style="margin:0;padding-left:18px;font-size:14px">
+      <li>She double-clicks it; no IT involved</li>
+      <li>Pane files live on her PC</li>
+      <li>Local server + one certificate prompt</li>
+      <li>Update: run the newer installer</li>
+    </ul>
+  </div>
+  <div class="card" style="border-top:6px solid var(--word)">
+    <p style="margin-top:0"><span class="pill" style="background:var(--word)">GitHub Pages</span> <b>work PC (IT-managed)</b></p>
+    <ul style="margin:0;padding-left:18px;font-size:14px">
+      <li>IT deploys <code>…github.io/jbc_speech/manifest.xml</code></li>
+      <li>Nothing installed: no server, no certificate</li>
+      <li>Also works in Word on the web</li>
+      <li>Update: <code>git push</code> (live in a minute or two)</li>
+    </ul>
+  </div>
+</div>
+<svg class="diagram" viewBox="0 0 1000 150" role="img" aria-label="Push to main runs tests, builds the site and deploys to GitHub Pages" style="margin-top:14px">
+  <defs><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="currentColor"/></marker></defs>
+  <g font-size="14" text-anchor="middle">
+    <rect x="20" y="45" width="160" height="60" rx="10" fill="none" stroke="var(--muted)" stroke-width="2"/><text x="100" y="72" font-weight="700">git push</text><text x="100" y="92" font-size="12">to main</text>
+    <rect x="230" y="45" width="160" height="60" rx="10" fill="none" stroke="var(--teal)" stroke-width="2"/><text x="310" y="72" font-weight="700">npm test</text><text x="310" y="92" font-size="12">18 tests must pass</text>
+    <rect x="440" y="45" width="200" height="60" rx="10" fill="none" stroke="var(--files)" stroke-width="2"/><text x="540" y="72" font-weight="700">build-web.mjs</text><text x="540" y="92" font-size="12">src + manifest.xml + index</text>
+    <rect x="690" y="45" width="290" height="60" rx="10" fill="var(--word)"/><text x="835" y="72" font-weight="700" style="fill:#fff">GitHub Pages</text><text x="835" y="92" font-size="12" style="fill:#fff">tcanterbury.github.io/jbc_speech</text>
+  </g>
+  <g stroke="currentColor" stroke-width="2"><path d="M182 75H226" marker-end="url(#b)"/><path d="M392 75H436" marker-end="url(#b)"/><path d="M642 75H686" marker-end="url(#b)"/></g>
+  <text x="500" y="135" font-size="12" text-anchor="middle">.github/workflows/pages.yml · first run needs Settings → Pages → Source: GitHub Actions</text>
+</svg>
+<p style="font-size:14px">For IT: <code>docs/IT-deployment.md</code> is a one-page request with the manifest URL, admin-center steps, permissions and data handling, and the audio license.</p>
+
+<h2><span class="n">5</span>Status</h2>
+<div class="grid2">
+<ul class="card check">
+  <li>Generated manifest passes Microsoft's validator</li>
+  <li>Both installer scripts parse cleanly</li>
+  <li>Packaged server: hidden start, no duplicates, serves pages + MP3 over HTTPS, blocks <code>../</code></li>
+  <li>Dev server fine; all 18 tests pass</li>
+  <li>Hosted manifest passes Microsoft's validator</li>
+</ul>
+<ul class="card todo">
+  <li><b>Run the installer once on your PC first.</b> It touches the certificate store and registry and shows a Windows prompt, so it hasn't been run automatically.</li>
+  <li>Open Word, use the installed JBC Speech tab, then uninstall from Settings → Apps.</li>
+  <li>Then copy the zip to her PC.</li>
+  <li><b>GitHub:</b> make the repo public, then Settings → Pages → Source: GitHub Actions.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

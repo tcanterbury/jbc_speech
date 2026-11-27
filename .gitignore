@@ -33,3 +33,6 @@ desktop.ini
 # Office / Word lock and temp files (e.g. while testing in a .docx)
 ~$*
 *.tmp
+
+# Packaged installer output (npm run package)
+dist/
