@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Feedback Form Spec</title>
+<style>
+:root{--ink:#183b40;--muted:#688079;--line:#dce6e2;--teal:#268274;--bg:#f6f8f7;--card:#fff;--night:#0a1524;--marker:#ffd84d;--warn:#c9801f;--cf:#f38020;--gh:#24292f;--ok:#2e8b57;--bad:#b23b3b}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#dbe9e5;--muted:#93aaa3;--line:#2c3d39;--bg:#121a18;--card:#1a2422}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 "Segoe UI",system-ui,sans-serif}
+.hero{background:linear-gradient(135deg,#0a1524,#0f2337 60%,#0d3133);color:#e9f4f1;padding:36px 18px 30px;border-bottom:4px solid var(--marker)}
+.hero .in,.wrap{max-width:1040px;margin:0 auto}
+.wrap{padding:8px 18px 80px}
+.hero h1{font-size:38px;margin:0 0 6px;letter-spacing:-.8px}
+.hero p{margin:0;color:#a9c4bd;max-width:70ch}
+.hl{background:var(--marker);color:var(--night);padding:0 .15em;border-radius:3px}
+h2{font-size:21px;margin:42px 0 12px;display:flex;align-items:center;gap:10px}
+h2 .n{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--teal);color:#fff;font-size:14px}
+p{max-width:76ch}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;align-items:start}
+figure{margin:0}
+figure img{display:block;max-width:100%;height:auto;border-radius:10px;border:1px solid var(--line);box-shadow:0 8px 26px rgba(0,0,0,.12)}
+figcaption{font-size:12px;color:var(--muted);margin-top:6px}
+svg text{fill:currentColor}
+.diagram{width:100%;height:auto;background:var(--card);border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;background:var(--card);border-radius:10px;overflow:hidden}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top;font-size:14px}
+th{background:color-mix(in srgb,var(--teal) 14%,var(--card))}
+.pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:99px;color:#fff}
+.public{background:var(--ok)}.secret{background:var(--bad)}
+.steps{list-style:none;padding:0;margin:0;display:grid;gap:10px;counter-reset:s}
+.steps li{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--c,var(--teal));border-radius:10px;padding:12px 14px 12px 46px;position:relative}
+.steps li input{position:absolute;left:14px;top:15px;width:18px;height:18px;accent-color:var(--teal)}
+.steps li.done{opacity:.55}
+.steps b{display:block}
+.steps small{color:var(--muted)}
+code{background:color-mix(in srgb,var(--teal) 12%,transparent);padding:1px 5px;border-radius:4px;font-size:13px}
+pre{background:#0a1524;color:#e9f4f1;border-radius:10px;padding:12px 14px;overflow-x:auto;font-size:13px}
+.callout{border-left:5px solid var(--warn);background:color-mix(in srgb,var(--warn) 10%,var(--card));padding:12px 16px;border-radius:8px;max-width:76ch}
+.progress{height:8px;border-radius:99px;background:var(--line);overflow:hidden;margin:10px 0 14px;max-width:420px}
+.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--teal),var(--marker));transition:width .25s}
+</style>
+</head>
+<body>
+<div class="hero"><div class="in">
+  <h1>Feedback form <span class="hl">+</span> sick homepage</h1>
+  <p>People send ideas and bug reports from a form on the site, and a small Cloudflare Worker files them as GitHub issues, so nobody needs a GitHub account. Plus a new homepage built for SLPs. 27 Nov 2026.</p>
+</div></div>
+<div class="wrap">
+
+<h2><span class="n">1</span>The new homepage</h2>
+<figure><img src="images/homepage.png" width="1024" height="720" alt="Homepage hero: dark chalkboard background, highlighted headline 'Type the sounds of speech', a mock Word document typing a transcription, symbol chips and a waveform"><figcaption>Real screenshot of the built site (desktop). The document types /ˈtiːtʃɚ/, /spiːtʃ/ … on a loop; the chips type into "Your turn" and play the real Esling/House recordings when Sound is on.</figcaption></figure>
+
+<h2><span class="n">2</span>How a submission travels</h2>
+<svg class="diagram" viewBox="0 0 1000 230" role="img" aria-label="Form on GitHub Pages posts to Cloudflare Worker, which checks Turnstile and creates a GitHub issue">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="currentColor"/></marker></defs>
+  <g font-size="14" text-anchor="middle">
+    <rect x="20" y="40" width="240" height="120" rx="14" fill="#0f2337"/><text x="140" y="80" font-weight="700" style="fill:#fff" font-size="16">feedback.html</text>
+    <text x="140" y="104" style="fill:#a9c4bd">GitHub Pages</text><text x="140" y="126" style="fill:#ffd84d" font-size="12">form + Turnstile check</text>
+    <rect x="380" y="40" width="250" height="120" rx="14" fill="var(--cf)"/><text x="505" y="78" font-weight="700" style="fill:#fff" font-size="16">Cloudflare Worker</text>
+    <text x="505" y="100" style="fill:#fff" font-size="12">origin ✓ · Turnstile ✓ · validate ✓</text>
+    <text x="505" y="120" style="fill:#fff" font-size="12">neutralize @mentions</text><text x="505" y="140" style="fill:#fff" font-size="12">🔒 holds GITHUB_TOKEN</text>
+    <rect x="750" y="40" width="230" height="120" rx="14" fill="var(--gh)"/><text x="865" y="80" font-weight="700" style="fill:#fff" font-size="16">GitHub issue</text>
+    <text x="865" y="104" style="fill:#fff" font-size="12">tcanterbury/jbc_speech</text><text x="865" y="126" style="fill:#ffd84d" font-size="12">labels: bug|enhancement, web form</text>
+  </g>
+  <g stroke="currentColor" stroke-width="2"><path d="M262 100H374" marker-end="url(#a)"/><path d="M632 100H744" marker-end="url(#a)"/></g>
+  <g font-size="12" text-anchor="middle"><text x="318" y="90">POST JSON</text><text x="688" y="90">REST API</text>
+  <text x="500" y="200">The browser never sees the token. Until feedback-config.js is filled in, the page shows the GitHub links instead.</text></g>
+</svg>
+
+<h2><span class="n">3</span>What the form looks like</h2>
+<div class="grid2">
+  <figure><img src="images/feedback-form.png" width="700" height="1020" alt="Feedback form with privacy warning, request/bug toggle, title, description and bug fields"><figcaption>"Report a bug" selected via <code>?type=bug</code>; the bug-only fields appear. The gap above Send is where Turnstile renders on the live site.</figcaption></figure>
+  <div>
+    <div class="callout"><b>SLP privacy:</b> issues are public, so the form opens with a clear warning not to include client or patient information. There's no name or email field, so nobody's contact details end up in public.</div>
+    <h3 style="margin-top:22px">Safeguards</h3>
+    <table>
+      <tr><th>Risk</th><th>Guard</th></tr>
+      <tr><td>Token theft</td><td>Only in the Worker, as a secret. Fine-grained: Issues read/write on <i>this repo only</i>, and it expires.</td></tr>
+      <tr><td>Bots and spam</td><td>Turnstile on every send, a hidden honeypot field (fake success, no issue), an origin allowlist and length limits.</td></tr>
+      <tr><td>@mention pings</td><td><code>@name</code> becomes <code>@​name</code> (zero-width space), so nobody is notified.</td></tr>
+      <tr><td>Error leaks</td><td>Friendly messages in the browser; details only in the Worker logs.</td></tr>
+    </table>
+  </div>
+</div>
+
+<h2><span class="n">4</span>Your one-time setup <small style="font-weight:400;color:var(--muted);font-size:13px">(tick as you go; it remembers)</small></h2>
+<div class="progress" aria-hidden="true"><i id="bar"></i></div>
+<ol class="steps" id="steps">
+  <li style="--c:var(--cf)"><input type="checkbox" aria-label="Done: Cloudflare account"><b>Make a free Cloudflare account</b><small>dash.cloudflare.com → Sign up</small></li>
+  <li style="--c:var(--cf)"><input type="checkbox" aria-label="Done: Turnstile widget"><b>Create a Turnstile widget</b><small>Turnstile → Add widget · name "JBC Speech feedback" · hostname <code>tcanterbury.github.io</code> · mode Managed → note the <span class="pill public">site key</span> and <span class="pill secret">secret key</span></small></li>
+  <li style="--c:var(--gh)"><input type="checkbox" aria-label="Done: GitHub token"><b>Create a fine-grained GitHub token</b><small>Settings → Developer settings → Fine-grained tokens · only <code>jbc_speech</code> · Repository permissions → <b>Issues: Read and write</b> · set an expiry and a reminder → <span class="pill secret">token</span></small></li>
+  <li style="--c:var(--teal)"><input type="checkbox" aria-label="Done: deploy"><b>Deploy the Worker and add the secrets</b>
+<pre>cd worker
+npx wrangler@4 login
+npx wrangler@4 deploy                       # prints the Worker URL
+npx wrangler@4 secret put GITHUB_TOKEN      # paste the token
+npx wrangler@4 secret put TURNSTILE_SECRET  # paste the secret key</pre><small>If it fails with a certificate error on a work network, run it from home.</small></li>
+  <li style="--c:var(--teal)"><input type="checkbox" aria-label="Done: connect"><b>Connect the form</b><small>Put the <span class="pill public">Worker URL</span>/feedback and the <span class="pill public">site key</span> in <code>src/feedback-config.js</code> and push, or send Claude just those two public values.</small></li>
+  <li style="--c:var(--marker)"><input type="checkbox" aria-label="Done: test"><b>Send a test</b><small>Open the live feedback page, send one, check the issue appears with the <code>web form</code> label, then close it.</small></li>
+</ol>
+<p class="callout" style="margin-top:16px"><span class="pill secret">secret</span> values (token, Turnstile secret key) never go into chat or a file. <span class="pill public">public</span> values (Worker URL, site key) are fine to share.</p>
+
+<h2><span class="n">5</span>Tests</h2>
+<div class="card">
+  <p style="margin:0 0 8px"><b>6 new tests, 24 in total</b>, in <code>tests/feedback.test.mjs</code>, with stand-ins for Turnstile and GitHub:</p>
+  <ul style="margin:0">
+    <li>validation limits, the honeypot and bug-only fields</li>
+    <li>issue title, labels and neutralized @mentions</li>
+    <li>success path: Turnstile checked first, then GitHub called with the server-side token, which never appears in the reply</li>
+    <li>other origins, failed checks and bad input rejected <i>without</i> calling GitHub</li>
+    <li>CORS preflight, and a 503 when the Worker isn't configured</li>
+  </ul>
+</div>
+</div>
+<script>
+// Setup checklist progress, remembered in this browser only.
+const boxes = [...document.querySelectorAll('#steps input')];
+let saved = [];
+try { saved = JSON.parse(localStorage.getItem('jbc-feedback-setup') || '[]'); } catch {}
+function update() {
+  boxes.forEach(b => b.closest('li').classList.toggle('done', b.checked));
+  document.getElementById('bar').style.width = `${100 * boxes.filter(b => b.checked).length / boxes.length}%`;
+  try { localStorage.setItem('jbc-feedback-setup', JSON.stringify(boxes.map(b => b.checked))); } catch {}
+}
+boxes.forEach((b, i) => { b.checked = Boolean(saved[i]); b.addEventListener('change', update); });
+update();
+</script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JBC Speech · IPA Library for Microsoft Word</title>
+<meta name="description" content="A free Microsoft Word add-in for typing the International Phonetic Alphabet. Click to insert, Shift-click to hear. Made for speech-language pathologists, teachers and students.">
+<link rel="icon" href="assets/jbc-icon-32.png">
+<link rel="stylesheet" href="home.css">
+<script type="module" src="home.js"></script>
+</head>
+<body>
+
+<header class="nav">
+  <a class="nav-brand" href="#top" aria-label="JBC Speech home"><img src="assets/jbc_speech.png" alt="JBC Speech" width="1972" height="789"></a>
+  <nav aria-label="Main">
+    <a href="#features">Features</a>
+    <a href="#chart">Chart view</a>
+    <a href="#add">Add to Word</a>
+    <a href="feedback.html">Feedback</a>
+    <a class="nav-cta" href="#add">Install</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="glyph-field" aria-hidden="true">
+    <span style="--x:6%;--y:18%;--s:7rem;--d:0s">ʃ</span><span style="--x:22%;--y:72%;--s:5rem;--d:-4s">ŋ</span>
+    <span style="--x:44%;--y:12%;--s:4rem;--d:-9s">θ</span><span style="--x:58%;--y:80%;--s:6rem;--d:-2s">ʒ</span>
+    <span style="--x:78%;--y:20%;--s:8rem;--d:-6s">ə</span><span style="--x:90%;--y:64%;--s:5rem;--d:-11s">ɹ</span>
+    <span style="--x:34%;--y:42%;--s:3.5rem;--d:-7s">ʔ</span><span style="--x:68%;--y:46%;--s:3rem;--d:-13s">æ</span>
+    <span style="--x:12%;--y:50%;--s:3rem;--d:-15s">ð</span><span style="--x:84%;--y:88%;--s:3.5rem;--d:-3s">ɲ</span>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="kicker"><span class="dot"></span> IPA Library for Microsoft Word · Free</p>
+      <h1>Type the <span class="hl">sounds</span> of speech.</h1>
+      <p class="hero-sub">One click and the symbol lands in your document. Shift-click and you hear it, spoken by phoneticians <strong>John Esling</strong> and <strong>Jill House</strong>. Built for <strong>speech-language pathologists</strong>, teachers and students.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="taskpane.html?preview=1">Try it in your browser</a>
+        <a class="btn btn-ghost" href="#add">Add it to Word →</a>
+      </div>
+      <p class="hero-fine">No account. Nothing you type is sent anywhere.</p>
+    </div>
+
+    <div class="demo" aria-label="Interactive demo">
+      <div class="doc">
+        <div class="doc-bar"><span></span><span></span><span></span><b>Session notes.docx</b></div>
+        <div class="doc-page">
+          <div class="doc-ribbon"><span class="tab">Home</span><span class="tab">Insert</span><span class="tab on">JBC Speech</span></div>
+          <p class="doc-line muted">Target word: <strong id="demo-word">speech</strong></p>
+          <p class="doc-line ipa-line" aria-live="off"><span class="slash">/</span><span id="demo-ipa"></span><span class="caret"></span><span class="slash">/</span></p>
+          <div class="doc-skel"><i style="width:92%"></i><i style="width:78%"></i><i style="width:85%"></i></div>
+          <p class="doc-line muted small">Your turn:</p>
+          <p class="doc-line ipa-line mine" id="demo-mine" aria-live="polite"><span class="placeholder">click symbols below…</span></p>
+        </div>
+      </div>
+      <div class="chips" id="demo-chips" role="group" aria-label="Try some symbols"></div>
+      <div class="demo-tools">
+        <button type="button" id="demo-sound" class="tool" aria-pressed="false">🔈 Sound off</button>
+        <button type="button" id="demo-clear" class="tool">Clear</button>
+        <span class="demo-hint">Click to type · turn sound on to hear each one</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="wave" aria-hidden="true" id="wave"></div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="stats" aria-label="At a glance">
+  <div><b id="stat-symbols">190+</b><span>IPA symbols</span></div>
+  <div><b id="stat-clips">244</b><span>expert recordings</span></div>
+  <div><b>2</b><span>views: List &amp; Chart</span></div>
+  <div><b>0</b><span>accounts needed</span></div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section class="section" id="features">
+  <p class="eyebrow">Why it helps</p>
+  <h2>Less hunting for symbols.<br>More time for your clients.</h2>
+  <div class="cards">
+    <article class="card"><div class="card-glyph">ə</div><h3>One click per sound</h3><p>Click a symbol and it's typed at your cursor, ready for the next. Build a whole transcription without leaving the keyboard flow.</p></article>
+    <article class="card"><div class="card-glyph">♪</div><h3>Hear every symbol</h3><p>Shift-click to play recordings by John Esling and Jill House from the IPA's own interactive chart. Perfect for checking or teaching a sound.</p></article>
+    <article class="card"><div class="card-glyph mini-chart" aria-hidden="true"><i></i><i></i><i></i><i class="x"></i><i></i><i></i></div><h3>The real IPA chart</h3><p>Switch to Chart view: consonants by place and manner, vowels on the trapezoid, exactly where you learned them.</p></article>
+    <article class="card"><div class="card-glyph">⌕</div><h3>Search like you think</h3><p>Type "voiceless velar", "schwa" or "U+0283". The right symbol appears, with a tooltip naming it.</p></article>
+    <article class="card"><div class="card-glyph">◌̃</div><h3>Diacritics done right</h3><p>Marks attach to the letter before them. Ready-made affricates like t͡ʃ and d͡ʒ save the fiddly tie bars.</p></article>
+    <article class="card"><div class="card-glyph">🔒</div><h3>Private by design</h3><p>No account, no tracking, no back end. It inserts the symbols you click, and that's all it does.</p></article>
+  </div>
+</section>
+
+<!-- ============ CHART SHOWCASE ============ -->
+<section class="section showcase" id="chart">
+  <div class="showcase-copy">
+    <p class="eyebrow">Chart view</p>
+    <h2>The chart on your classroom wall, inside Word.</h2>
+    <p>Voiceless on the left, voiced on the right, shaded cells where sounds are judged impossible: the layout follows the International Phonetic Association's 2020 chart. In a narrow pane the table splits into Lips, Tongue tip, Tongue body and Throat. Widen it and the whole chart appears.</p>
+    <a class="btn btn-dark" href="taskpane.html?preview=1&amp;view=chart">Open Chart view →</a>
+  </div>
+  <figure class="frame"><div class="frame-bar"><span></span><span></span><span></span></div><img src="img/chart-view.png" alt="Chart view: the pulmonic consonant table and the vowel trapezoid" width="760" height="820" loading="lazy"></figure>
+</section>
+
+<!-- ============ ADD TO WORD ============ -->
+<section class="section" id="add">
+  <p class="eyebrow">Get started</p>
+  <h2>Add it to Word</h2>
+  <p class="section-lead">Choose the way that fits your computer. Afterwards, open the <b>JBC Speech</b> tab and click <b>IPA Library</b>.</p>
+  <div class="routes">
+    <details class="route" name="add-to-word" open>
+      <summary><span class="route-tag">Easiest</span> Your own Windows PC <small>small installer</small></summary>
+      <ol>
+        <li><a href="downloads/JBC-Speech-online.zip">Download the installer</a> (a few KB).</li>
+        <li>Right-click the zip → <b>Properties</b> → tick <b>Unblock</b> → OK. This stops Windows warning about a downloaded file.</li>
+        <li>Right-click the zip → <b>Extract All</b>.</li>
+        <li>Close Word, then double-click <b>Install JBC Speech (online).cmd</b>.</li>
+      </ol>
+      <p class="tip">To remove it: Settings → Apps → Installed apps → JBC Speech (online) → … → Uninstall.</p>
+    </details>
+    <details class="route" name="add-to-word">
+      <summary><span class="route-tag alt">Work</span> Work PC managed by IT <small>IT adds it for you</small></summary>
+      <p>Ask IT to deploy this manifest from the Microsoft 365 admin center (Settings → Integrated apps → Upload custom apps → Office Add-in):</p>
+      <p><code>{{BASE_URL}}/manifest.xml</code></p>
+      <p class="tip">Nothing is installed on the PC. The add-in only inserts the symbols you click, and sends nothing anywhere.</p>
+    </details>
+    <details class="route" name="add-to-word">
+      <summary><span class="route-tag alt">Manual</span> Word on Windows, without an installer <small>shared folder</small></summary>
+      <ol>
+        <li>Save <a href="manifest.xml" download>manifest.xml</a> into a folder of its own.</li>
+        <li>Share the folder: right-click → Properties → Sharing → Share. Note its network path, for example <code>\\PC-NAME\folder</code>.</li>
+        <li>In Word: File → Options → Trust Center → Trust Center Settings → <b>Trusted Add-in Catalogs</b>.</li>
+        <li>Paste the path into Catalog Url → <b>Add catalog</b> → tick <b>Show in Menu</b> → OK, and restart Word.</li>
+        <li>Home → Add-ins → More Add-ins → <b>Shared Folder</b> → JBC Speech → Add.</li>
+      </ol>
+    </details>
+    <details class="route" name="add-to-word">
+      <summary><span class="route-tag alt">Web</span> Word on the web <small>browser</small></summary>
+      <ol>
+        <li>Save <a href="manifest.xml" download>manifest.xml</a>.</li>
+        <li>Home → Add-ins → More Add-ins → <b>My Add-ins</b> → <b>Upload My Add-in</b>, and choose the file.</li>
+      </ol>
+      <p class="tip">Microsoft intends this for testing; the add-in can disappear when browser data is cleared.</p>
+    </details>
+  </div>
+  <p class="fine">Needs Microsoft 365 Word (version 2205 or later) or Word 2024. Menu labels vary a little between versions. <a href="help.html">Full help →</a></p>
+</section>
+
+<!-- ============ FEEDBACK ============ -->
+<section class="cta-band" id="feedback">
+  <div>
+    <p class="eyebrow light">A work in progress</p>
+    <h2>Help shape what comes next.</h2>
+    <p>This is an early version, and it grows with you. Missing a symbol? Want a shortcut for your caseload? Spotted something wrong? Tell us. Every idea and every report helps.</p>
+  </div>
+  <div class="cta-buttons">
+    <a class="btn btn-primary" href="feedback.html?type=feature">Request a feature</a>
+    <a class="btn btn-ghost" href="feedback.html?type=bug">Report a bug</a>
+  </div>
+</section>
+
+<!-- ============ THANKS ============ -->
+<section class="section thanks">
+  <p class="eyebrow">With gratitude</p>
+  <h2>Built on generously shared work.</h2>
+  <div class="thanks-grid">
+    <div><b>Prof. John Esling &amp; Jill House</b><span>for the recordings at the heart of the listening feature</span></div>
+    <div><b>International Phonetic Association</b><span>for the IPA itself and the 2020 IPA chart</span></div>
+    <div><b>Microsoft · Node.js · Unicode · SIL</b><span>for the platform, runtime, encoding and fonts it relies on</span></div>
+  </div>
+  <p class="section-lead">We're truly grateful. Everyone is thanked properly, with license details, on the <a href="audio-credits.html">Credits &amp; thanks</a> page.</p>
+</section>
+</main>
+
+<footer class="foot">
+  <img src="assets/jbc_speech.png" alt="JBC Speech" width="1972" height="789">
+  <p>Version {{VERSION}} · <a href="help.html">Help</a> · <a href="feedback.html">Feedback</a> · <a href="audio-credits.html">Credits &amp; thanks</a></p>
+  <p class="fine">Recordings: John Esling &amp; Jill House, from the International Phonetic Association's interactive chart (CC BY-NC-ND 4.0). IPA chart © 2020 International Phonetic Association (CC BY-SA 3.0). An independent project, not endorsed by them.</p>
+</footer>
+</body>
+</html>

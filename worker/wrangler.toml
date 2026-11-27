@@ -1,0 +1,16 @@
+# Cloudflare Worker for the feedback form. Setup: docs/feedback-form.md
+#   npx wrangler@4 deploy                       (from this folder)
+#   npx wrangler@4 secret put GITHUB_TOKEN      fine-grained token: Issues read/write, jbc_speech only
+#   npx wrangler@4 secret put TURNSTILE_SECRET  from the Turnstile widget
+name = "jbc-speech-feedback"
+main = "src/index.js"
+compatibility_date = "2025-09-01"
+workers_dev = true
+
+[vars]
+REPO = "tcanterbury/jbc_speech"
+# Pages that may send the form (comma-separated). The add-in's links all open the hosted form.
+ALLOWED_ORIGINS = "https://tcanterbury.github.io"
+
+[observability]
+enabled = true

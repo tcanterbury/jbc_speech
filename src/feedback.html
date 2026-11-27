@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>JBC Speech · Feedback</title><link rel="stylesheet" href="taskpane.css">
+<script type="module" src="feedback.js"></script></head>
+<body class="page">
+<header class="site-bar"><a class="brand-pill" href="https://tcanterbury.github.io/jbc_speech/" aria-label="JBC Speech home"><img src="assets/jbc_speech.png" alt="JBC Speech" width="1972" height="789"></a><nav aria-label="Site"><a href="https://tcanterbury.github.io/jbc_speech/">Home</a><a href="help.html">Help</a><a href="https://tcanterbury.github.io/jbc_speech/feedback.html" aria-current="page">Feedback</a><a href="audio-credits.html">Credits &amp; thanks</a></nav></header>
+<main>
+<h1>Send feedback</h1>
+<p class="lead">Thank you for helping make the IPA Library better. It's a work in progress, and ideas and bug reports from the people who use it, especially SLPs, are what shape it.</p>
+
+<div class="callout privacy">
+<p><strong>Please don't include client or patient information.</strong> What you send here is posted publicly, so others can see it and add their thoughts. Describe the symbol or step instead of pasting real transcriptions.</p>
+</div>
+
+<form id="feedback-form" class="feedback-form" novalidate>
+  <fieldset class="type-choice">
+    <legend>What would you like to do?</legend>
+    <label><input type="radio" name="type" value="feature" checked> <span>Request a feature</span></label>
+    <label><input type="radio" name="type" value="bug"> <span>Report a bug</span></label>
+  </fieldset>
+
+  <label class="field"><span id="title-label">Short title</span>
+    <input name="title" type="text" maxlength="120" required autocomplete="off" placeholder="For example: Add the extIPA symbols">
+  </label>
+
+  <label class="field"><span data-feature="What would you like the library to do?" data-bug="What happened?">What would you like the library to do?</span>
+    <textarea name="details" rows="5" maxlength="5000" required></textarea>
+  </label>
+
+  <label class="field"><span data-feature="How would it help you? (optional)" data-bug="What did you expect to happen? (optional)">How would it help you? (optional)</span>
+    <textarea name="extra" rows="3" maxlength="2000"></textarea>
+  </label>
+
+  <div class="bug-only" hidden>
+    <label class="field"><span>Steps to reproduce (optional)</span>
+      <textarea name="steps" rows="3" maxlength="2000" placeholder="1. Opened Chart view&#10;2. Clicked …"></textarea>
+    </label>
+    <div class="field-row">
+      <label class="field"><span>How was it added? (optional)</span>
+        <select name="installMethod"><option value="">Choose…</option><option>Installer (this PC)</option><option>Online installer</option><option>IT deployment</option><option>Word on the web</option><option>Not sure</option></select>
+      </label>
+      <label class="field"><span>Word version (optional)</span>
+        <input name="wordVersion" type="text" maxlength="120" placeholder="File › Account › About Word">
+      </label>
+    </div>
+  </div>
+
+  <!-- Left empty by people; filled by bots. -->
+  <label class="honeypot" aria-hidden="true">Website <input name="website" type="text" tabindex="-1" autocomplete="off"></label>
+
+  <div id="turnstile" class="turnstile"></div>
+  <button type="submit" class="submit">Send</button>
+  <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+</form>
+
+<div id="thanks" class="callout" hidden>
+  <p class="lead"><strong>Thank you so much!</strong></p>
+  <p id="thanks-detail">Your feedback has been received.</p>
+  <p><button type="button" id="send-another" class="link-button">Send something else</button></p>
+</div>
+
+<div id="fallback" class="callout" hidden>
+  <p>The feedback form isn't switched on yet. In the meantime, you can send your idea or report through GitHub (a free account is needed):</p>
+  <div class="feedback-links">
+    <a class="primary" href="https://github.com/tcanterbury/jbc_speech/issues/new?template=feature_request.md">Request a feature</a>
+    <a href="https://github.com/tcanterbury/jbc_speech/issues/new?template=bug_report.md">Report a bug</a>
+  </div>
+</div>
+
+<p class="note">With heartfelt thanks to everyone who shares ideas and reports problems, and to all the people credited on the <a href="audio-credits.html">Credits &amp; thanks</a> page.</p>
+</main></body></html>

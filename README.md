@@ -2,7 +2,7 @@
 
 A Word add-in with a **JBC Speech** ribbon tab and an **IPA Library** button. The button toggles a right-hand task pane. Inserting symbols leaves the pane open; use the same button, the pane's Hide button, or Word's close button to dismiss it. The ribbon tab itself selects ribbon controls; the button inside it toggles the pane.
 
-It's made for **speech-language pathologists (SLPs)**, students and anyone else who transcribes speech, and we hope it's genuinely useful. It's a work in progress, so ideas and bug reports are very welcome: [request a feature](https://github.com/tcanterbury/jbc_speech/issues/new?template=feature_request.md) or [report a bug](https://github.com/tcanterbury/jbc_speech/issues/new?template=bug_report.md). It's built on generously shared work, especially Prof. John Esling and Jill House's recordings and the International Phonetic Association's IPA chart; see **With thanks** at the end.
+It's made for **speech-language pathologists (SLPs)**, students and anyone else who transcribes speech, and we hope it's genuinely useful. It's a work in progress, so ideas and bug reports are very welcome: [request a feature](https://tcanterbury.github.io/jbc_speech/feedback.html?type=feature) or [report a bug](https://tcanterbury.github.io/jbc_speech/feedback.html?type=bug). It's built on generously shared work, especially Prof. John Esling and Jill House's recordings and the International Phonetic Association's IPA chart; see **With thanks** at the end.
 
 All standard IPA categories appear together in a single scrollable view: pulmonic consonants, vowels, non-pulmonic consonants, other symbols and affricates, diacritics, suprasegmentals, and tones/word accents. Transcription brackets and several common combinations are included for convenience. Search accepts symbols, descriptive names, categories, and Unicode codes. Shift-click previews official IPA recordings where available. The separate extIPA inventory is not included.
 
@@ -41,7 +41,8 @@ Installer sources are in `installer/`; the build script is `scripts/package.mjs`
 Every push to `main` runs `.github/workflows/pages.yml`, which runs the tests and publishes the site to **https://tcanterbury.github.io/jbc_speech/**:
 - `src/` as-is;
 - `manifest.xml`, pointing at the site, with its own add-in ID;
-- `index.html`, a landing page with a browser demo.
+- the homepage from `site/` (`index.html`, `home.css`, `home.js`): a live typing demo with playable symbols, features, Chart view showcase, install steps and feedback;
+- `feedback.html`, a form that files feature requests and bug reports as GitHub issues through a Cloudflare Worker (`worker/`), so people don't need a GitHub account. It falls back to GitHub links until the Worker is set up; see `docs/feedback-form.md` for the one-time setup.
 
 This is the option for a work PC managed by IT. Nothing is installed: IT deploys `https://tcanterbury.github.io/jbc_speech/manifest.xml` from the Microsoft 365 admin center. See `docs/IT-deployment.md`, a note written for IT. Anyone with the URL can open the site.
 
@@ -142,7 +143,8 @@ The current Microsoft development tools retain five transitive npm audit finding
 - `src/word-actions.js`: Word insertion and toggle logic.
 - `scripts/server.mjs`: local HTTP preview / HTTPS development server; serves only `src/`. With `--config` it runs the installed copy (port and certificate from `jbc-speech.json`); `--background` starts it hidden unless it's already running.
 - `scripts/package.mjs`, `installer/`: the Windows installer zip (see **Install on another PC**).
-- `scripts/build-web.mjs`, `.github/workflows/pages.yml`: the GitHub Pages site (see **Hosted copy**). `scripts/manifest-variant.mjs` holds the IDs and URLs of all three copies.
+- `scripts/build-web.mjs`, `.github/workflows/pages.yml`, `site/`: the GitHub Pages site and homepage (see **Hosted copy**).
+- `worker/`, `src/feedback.*`: the feedback form and its Cloudflare Worker (`npm.cmd run feedback:deploy`; setup in `docs/feedback-form.md`). `scripts/manifest-variant.mjs` holds the IDs and URLs of all three copies.
 - `src/assets/jbc_speech.png`: supplied full logo, displayed in the sidebar. The ribbon uses `jbc-icon-16.png`, `jbc-icon-32.png`, and `jbc-icon-80.png`, exported from its speech-bubble mark. Run `powershell -ExecutionPolicy Bypass -File scripts/build-icons.ps1` to regenerate these sizes; the crop rectangle is specific to this logo.
 
 The inventory uses Unicode characters organized by phonetic properties, with the [International Phonetic Association's standard categories](https://www.internationalphoneticassociation.org/content/ipa-chart) as reference. It does not reproduce their chart artwork and is not endorsed by the Association. See Microsoft's [shared runtime setup](https://learn.microsoft.com/en-us/office/dev/add-ins/develop/configure-your-add-in-to-use-a-shared-runtime) and [show/hide documentation](https://learn.microsoft.com/en-us/office/dev/add-ins/develop/show-hide-add-in) for the pane behavior.

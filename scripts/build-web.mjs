@@ -2,7 +2,7 @@
 //   node scripts/build-web.mjs              base URL from variants.web.baseUrl
 //   PAGES_BASE_URL=https://… node scripts/build-web.mjs   (the workflow passes the real Pages URL)
 // Output: src/ as-is, manifest.xml pointing at the site (for IT / Microsoft 365 deployment),
-// and index.html, a landing page with a browser demo link.
+// and the homepage from site/ (index.html, home.css, home.js).
 import { access, cp, mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
@@ -44,86 +44,10 @@ if (process.platform === 'win32') {
 }
 await access(zip);
 await rm(stage, { recursive: true, force: true });
-await writeFile(path.join(out, 'index.html'), `<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>JBC Speech IPA Library</title><link rel="stylesheet" href="taskpane.css">
-<style>
-li{margin:6px 0}code{font-size:12px;word-break:break-all}
-.route{border:1px solid #dce6e2;border-radius:8px;background:#fff;margin:8px 0}
-.route summary{padding:12px 14px;cursor:pointer;font-weight:600;color:#31594e;list-style-position:inside}
-.route summary::marker{color:#477b6c}
-.route summary span{font-weight:400;color:#688079;font-size:12px;margin-left:4px}
-.route[open] summary{border-bottom:1px solid #dce6e2}
-.route summary:focus-visible{outline:2px solid #197565;outline-offset:2px;border-radius:7px}
-.route .body{padding:4px 16px 12px}
-.route ol{padding-left:20px;margin:8px 0}
-.tip{font-size:12px;color:#637c74;background:#eef5f1;border-radius:6px;padding:8px 10px}
-</style>
-</head><body class="page"><main>
-<img class="page-logo" src="assets/jbc_speech.png" alt="JBC Speech" width="1972" height="789">
-<h1>IPA Library for Microsoft Word</h1>
-<p class="lead">A free Word add-in for typing the International Phonetic Alphabet. Click a symbol to insert it, Shift-click to hear it, and switch between a simple list and a layout that follows the IPA chart.</p>
-<p>It was made for <strong>speech-language pathologists (SLPs)</strong>, students and anyone else who transcribes speech. We hope it makes writing up assessments, notes and materials a little quicker and a lot less fiddly.</p>
-<ul>
-<li><a href="taskpane.html?preview=1">Try it in your browser</a> (symbols go into a practice box).</li>
-<li><a href="taskpane.html?preview=1&amp;view=chart">Browser demo, Chart view</a></li>
-<li><a href="help.html">Help</a> · <a href="audio-credits.html">Credits &amp; thanks</a></li>
-</ul>
-<h2>Add it to Word</h2>
-<p>Choose the way that fits your computer. Afterwards, open the <b>JBC Speech</b> tab in Word and click <b>IPA Library</b>. Menu labels vary a little between Word versions.</p>
-
-<details class="route" name="add-to-word" open>
-<summary>Your own Windows PC <span>easiest · small installer</span></summary>
-<div class="body"><ol>
-<li><a href="downloads/JBC-Speech-online.zip">Download the installer</a> (a few KB).</li>
-<li>Right-click the zip → <b>Properties</b> → tick <b>Unblock</b> → OK. This stops Windows warning about a downloaded file.</li>
-<li>Right-click the zip → <b>Extract All</b>.</li>
-<li>Close Word, then double-click <b>Install JBC Speech (online).cmd</b>.</li>
-</ol>
-<p class="tip">To remove it: Settings → Apps → Installed apps → JBC Speech (online) → … → Uninstall.</p></div>
-</details>
-
-<details class="route" name="add-to-word">
-<summary>Work PC managed by IT <span>IT adds it for you</span></summary>
-<div class="body"><p>Ask IT to deploy this manifest from the Microsoft 365 admin center (Settings → Integrated apps → Upload custom apps → Office Add-in):</p>
-<p><code>${baseUrl}/manifest.xml</code></p>
-<p class="tip">Nothing is installed on the PC. The add-in only inserts the symbols you click, and sends nothing anywhere.</p></div>
-</details>
-
-<details class="route" name="add-to-word">
-<summary>Word on Windows, without an installer <span>shared folder</span></summary>
-<div class="body"><ol>
-<li>Save <a href="manifest.xml" download>manifest.xml</a> into a folder of its own.</li>
-<li>Share the folder: right-click it → Properties → Sharing → Share. Note its network path, for example <code>\\\\PC-NAME\\folder</code>.</li>
-<li>In Word, go to File → Options → Trust Center → Trust Center Settings → <b>Trusted Add-in Catalogs</b>.</li>
-<li>Paste the network path into Catalog Url, click <b>Add catalog</b>, tick <b>Show in Menu</b>, click OK, and restart Word.</li>
-<li>Go to Home → Add-ins → More Add-ins → <b>Shared Folder</b> → JBC Speech → Add.</li>
-</ol></div>
-</details>
-
-<details class="route" name="add-to-word">
-<summary>Word on the web <span>browser</span></summary>
-<div class="body"><ol>
-<li>Save <a href="manifest.xml" download>manifest.xml</a>.</li>
-<li>In Word on the web, go to Home → Add-ins → More Add-ins → <b>My Add-ins</b> → <b>Upload My Add-in</b>, and choose the file.</li>
-</ol>
-<p class="tip">Microsoft intends this for testing; the add-in can disappear when browser data is cleared.</p></div>
-</details>
-<h2>A work in progress</h2>
-<div class="callout">
-<p>This is an early version, and it grows with your feedback. If there's a symbol, shortcut or layout that would help your work, please ask. If something doesn't work as it should, please let us know. Every report helps.</p>
-<div class="feedback-links">
-<a class="primary" href="https://github.com/tcanterbury/jbc_speech/issues/new?template=feature_request.md">Request a feature</a>
-<a href="https://github.com/tcanterbury/jbc_speech/issues/new?template=bug_report.md">Report a bug</a>
-<a href="https://github.com/tcanterbury/jbc_speech/issues">See what's planned</a>
-</div>
-<p class="note">These open GitHub, which needs a free account.</p>
-</div>
-
-<h2>With thanks</h2>
-<p>This library exists because of what others have generously shared: Prof. John Esling and Jill House's recordings, the International Phonetic Association's IPA chart, and the open tools behind it. We're truly grateful. Everyone is thanked on the <a href="audio-credits.html">Credits &amp; thanks</a> page.</p>
-
-<p class="note">Version ${version}. With heartfelt thanks to John Esling and Jill House for the recordings (from the International Phonetic Association's interactive chart, CC BY-NC-ND 4.0), and to the International Phonetic Association for the IPA chart (CC BY-SA 3.0). Everyone who made this possible is thanked on the <a href="audio-credits.html">Credits &amp; thanks</a> page. This is an independent project and isn't endorsed by them.</p>
-</main></body></html>
-`);
+// Homepage: site/ (index.html, home.css, home.js) plus the Chart view screenshot from docs/images.
+await cp(path.join(project, 'site'), out, { recursive: true });
+const home = path.join(out, 'index.html');
+await writeFile(home, (await readFile(home, 'utf8')).replaceAll('{{BASE_URL}}', baseUrl).replaceAll('{{VERSION}}', version));
+await mkdir(path.join(out, 'img'), { recursive: true });
+await cp(path.join(project, 'docs', 'images', 'wide-chart.png'), path.join(out, 'img', 'chart-view.png'));
 console.log(`Built ${path.relative(project, out)} for ${baseUrl}`);
