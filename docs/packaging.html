@@ -169,6 +169,7 @@ code{background:color-mix(in srgb,var(--teal) 10%,transparent);padding:1px 5px;b
   <p style="margin-top:0"><span class="pill" style="background:var(--reg)">Online installer</span> <b>personal PC, hosted copy · 6 KB</b></p>
   <p style="font-size:14px;margin-bottom:0">Download <code>…github.io/jbc_speech/downloads/JBC-Speech-online.zip</code> from the landing page and double-click. It only saves the manifest and adds the one Word registry entry plus a Settings → Apps entry. No server, no certificate, no Node. The pane updates itself with every push.</p>
 </div>
+<div class="callout" style="margin-top:14px"><b>Why the installers aren't code-signed:</b> the "Windows protected your PC" warning comes from the mark Windows puts on downloads. A self-signed certificate wouldn't be trusted on her PC either, and <code>.cmd</code> files can't be signed at all. So the instructions say to right-click the zip → Properties → <b>Unblock</b> before extracting, and the warning never appears. Paid signing (about $10 a month) only makes sense if the installer becomes an <code>.exe</code>.</div>
 <p style="font-size:14px">For IT: <code>docs/IT-deployment.md</code> is a one-page request with the manifest URL, admin-center steps, permissions and data handling, and the audio license.</p>
 
 <h2><span class="n">5</span>Status</h2>

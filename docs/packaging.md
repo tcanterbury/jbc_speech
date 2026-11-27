@@ -72,6 +72,8 @@ Decided 2026-11-26: keep the installer, and also publish a hosted copy in case h
 
 **Online installer** (added 2026-11-26): `downloads/JBC-Speech-online.zip` on the site, about 6 KB, built by `build-web.mjs` from `installer/online/` plus the site's manifest. It copies the manifest to `%LOCALAPPDATA%\JBC Speech (online)`, adds the `WEF\Developer` registry value and a Settings → Apps entry, and checks the site is reachable. There's no server, certificate or Node, and pane updates arrive with each deploy. It's for a personal PC that can use the hosted copy. On a work PC, use IT deployment instead. For doing it without any installer, the README also documents the shared-folder catalog and Word on the web upload.
 
+**Code signing: not used** (decided 2026-11-26). Windows marks downloaded files, and that mark triggers SmartScreen and Attachment Manager warnings. A self-signed certificate isn't trusted on her PC until it's installed there, the same chicken-and-egg problem. `.cmd` files can't carry an Authenticode signature, and the `.ps1` files run with `-ExecutionPolicy Bypass`. Instead, both READ MEs and the landing page say: right-click the zip → Properties → **Unblock** before extracting, which removes the mark. Real signing (Microsoft Trusted Signing, about $10 a month, or an OV certificate) would only pay off if the installer became a signed `.exe` or `.msi`.
+
 One-time GitHub setup (manual): make the repo public, then **Settings → Pages → Source: GitHub Actions**. `configure-pages` fails until Pages is enabled; after that, re-run the workflow or push again.
 
 Verified: the hosted manifest passes `office-addin-manifest validate`, and all 18 tests pass.

@@ -6,10 +6,11 @@ the JBC Speech website each time you open it, so it needs an internet connection
 and it updates itself automatically. Nothing runs in the background on your PC.
 
 INSTALL
-1. Unzip this folder (right-click > Extract All). Don't run it from inside the zip.
-2. Close Word.
-3. Double-click "Install JBC Speech (online).cmd".
-   If Windows says "Windows protected your PC", click "More info", then "Run anyway".
+1. Before unzipping: right-click the zip > Properties > tick "Unblock" > OK.
+   (This stops Windows warning that the files came from the internet.)
+2. Unzip it (right-click > Extract All). Don't run it from inside the zip.
+3. Close Word, then double-click "Install JBC Speech (online).cmd".
+   If Windows still says "Windows protected your PC", click "More info", then "Run anyway".
 4. Open Word. Choose the JBC Speech tab, then IPA Library.
 
 USING IT
