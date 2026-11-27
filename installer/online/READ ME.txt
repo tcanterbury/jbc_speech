@@ -11,7 +11,14 @@ INSTALL
 2. Unzip it (right-click > Extract All). Don't run it from inside the zip.
 3. Close Word, then double-click "Install JBC Speech (online).cmd".
    If Windows still says "Windows protected your PC", click "More info", then "Run anyway".
-4. Open Word. Choose the JBC Speech tab, then IPA Library.
+4. Word opens a short welcome document and adds the JBC Speech tab to the ribbon.
+   If Word asks to trust or start the add-in, choose Yes. Close the document without saving.
+5. From now on: choose the JBC Speech tab, then IPA Library.
+
+NO JBC SPEECH TAB?
+- Start menu > "JBC Speech (online)" opens the welcome document again, which adds the tab.
+- Or in Word: Home > Add-ins > More Add-ins (or Advanced) > My Add-ins >
+  Developer Add-ins > JBC Speech > Add.
 
 USING IT
 - Click in your document, then click a symbol to insert it.

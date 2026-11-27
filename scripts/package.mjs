@@ -43,10 +43,10 @@ await writeFile(path.join(app, 'jbc-speech.json'), JSON.stringify({
 await writeFile(path.join(app, 'uninstall.ps1'), crlf(await readFile(at('installer', 'uninstall.ps1'), 'utf8')));
 
 // Top-level files she sees after unzipping.
-for (const file of ['install.ps1', 'Install JBC Speech.cmd', 'Uninstall JBC Speech.cmd', 'READ ME.txt']) {
-  await writeFile(path.join(out, file), crlf(await readFile(at('installer', file), 'utf8')));
+for (const file of ['install.ps1', 'Install JBC Speech.cmd', 'Uninstall JBC Speech.cmd', 'READ ME.txt', 'shared/New-WelcomeDocument.ps1']) {
+  await writeFile(path.join(out, path.basename(file)), crlf(await readFile(at('installer', file), 'utf8')));
 }
-for (const script of ['install.ps1', 'uninstall.ps1']) {
+for (const script of ['install.ps1', 'uninstall.ps1', 'shared/New-WelcomeDocument.ps1']) {
   const text = await readFile(at('installer', script), 'utf8');
   if (/[^\x00-\x7F]/.test(text)) throw new Error(`${script} must stay ASCII for Windows PowerShell 5.1`);
 }

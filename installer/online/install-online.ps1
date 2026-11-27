@@ -59,7 +59,22 @@ try {
     Say "Could not reach $($config.siteUrl) right now. Word needs it when the library opens." 'Yellow'
 }
 
+# Add it to Word: registering only lists the add-in; opening a document that references it adds the
+# JBC Speech tab to the ribbon. The document stays available from the Start menu.
+. (Join-Path $PSScriptRoot 'New-WelcomeDocument.ps1')
+$welcome = Join-Path $dest 'Welcome to JBC Speech.docx'
+$version = ([xml](Get-Content $manifest -Raw)).OfficeApp.Version
+New-WelcomeDocument -Path $welcome -AddinId $config.addinId -Version $version
+$shell = New-Object -ComObject WScript.Shell
+$link = $shell.CreateShortcut((Join-Path ([Environment]::GetFolderPath('Programs')) "$name.lnk"))
+$link.TargetPath = $welcome
+$link.Description = 'Opens Word with the JBC Speech IPA library'
+$link.Save()
+
 Write-Host ''
 Say "$name is installed." 'Green'
-Say 'Open Word, choose the JBC Speech tab, then IPA Library.' 'White'
+Say 'Word will now open a short welcome document. The JBC Speech tab appears on the ribbon,' 'White'
+Say 'and the IPA library opens on the right. You can close the document without saving.' 'White'
+Say 'If Word asks whether to trust or start the add-in, choose Yes / Trust.'
 Say 'Tip: for the best-looking symbols, use an IPA font such as Doulos SIL or Charis SIL.'
+Start-Process -FilePath $welcome

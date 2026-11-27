@@ -29,7 +29,7 @@ The installer runs per user, with no admin rights, and installs to `%LOCALAPPDAT
 2. Copies a portable `node.exe` (the one that ran the build), `src/`, `server.mjs` and a manifest for the installed copy.
 3. Creates a self-signed `localhost` certificate in the user's store and trusts it. Windows asks the user to confirm once.
 4. Adds a Startup shortcut that runs the server hidden on port 44391, and starts the server immediately.
-5. Registers the manifest under `HKCU\Software\Microsoft\Office\16.0\WEF\Developer`, the same mechanism `npm run sideload` uses.
+5. Registers the manifest under `HKCU\Software\Microsoft\Office\16.0\WEF\Developer`, the same mechanism `npm run sideload` uses. Registration alone only *lists* the add-in in Word, so the installer then opens a generated **Welcome to JBC Speech.docx** that references it. Opening it adds the JBC Speech tab. A Start menu shortcut reopens it if the tab goes missing. Both installers do this.
 6. Adds an uninstall entry to Settings → Apps.
 
 Re-running a newer installer updates the files and keeps the certificate. The installed copy has its own add-in ID and port, so it can sit beside your dev sideload. Word still needs internet when the pane opens, because Office.js loads from Microsoft's CDN.

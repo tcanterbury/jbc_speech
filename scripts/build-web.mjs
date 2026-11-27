@@ -26,8 +26,11 @@ const folder = path.join(stage, 'JBC-Speech-online');
 await rm(stage, { recursive: true, force: true });
 await mkdir(folder, { recursive: true });
 const onlineSource = path.join(project, 'installer', 'online');
-for (const file of await readdir(onlineSource)) {
-  const text = await readFile(path.join(onlineSource, file), 'utf8');
+const onlineFiles = [...(await readdir(onlineSource)).map(file => path.join(onlineSource, file)),
+  path.join(project, 'installer', 'shared', 'New-WelcomeDocument.ps1')];
+for (const source of onlineFiles) {
+  const file = path.basename(source);
+  const text = await readFile(source, 'utf8');
   if (file.endsWith('.ps1') && /[^\x00-\x7F]/.test(text)) throw new Error(`${file} must stay ASCII for Windows PowerShell 5.1`);
   await writeFile(path.join(folder, file), text.replace(/\r?\n/g, '\r\n'));
 }

@@ -13,6 +13,7 @@ while (Get-Process WINWORD -ErrorAction SilentlyContinue) {
 }
 Remove-ItemProperty -Path 'HKCU:\Software\Microsoft\Office\16.0\WEF\Developer' -Name $config.addinId -ErrorAction SilentlyContinue
 Remove-Item "HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\$($config.addinId)" -Recurse -ErrorAction SilentlyContinue
+Remove-Item (Join-Path ([Environment]::GetFolderPath('Programs')) "$($config.name).lnk") -ErrorAction SilentlyContinue
 Remove-Item $dest -Recurse -Force -ErrorAction SilentlyContinue
 Write-Host "$($config.name) has been removed." -ForegroundColor Green
 Read-Host 'Press Enter to close' | Out-Null
