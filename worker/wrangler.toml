@@ -1,8 +1,11 @@
 # Cloudflare Worker for the feedback form. Setup: docs/feedback-form.md
-#   npx wrangler@4 deploy                       (from this folder)
-#   npx wrangler@4 secret put GITHUB_TOKEN      fine-grained token: Issues read/write, jbc_speech only
-#   npx wrangler@4 secret put TURNSTILE_SECRET  from the Turnstile widget
-name = "jbc-speech-feedback"
+# Deployed by Cloudflare Workers Builds from this repo (root directory: worker) on every push to main,
+# or by hand from this folder with: npx wrangler@4 deploy
+# Secrets (dashboard > Settings > Variables and Secrets, or `npx wrangler@4 secret put <NAME>`):
+#   GITHUB_TOKEN      fine-grained token: Issues read/write, jbc_speech only
+#   TURNSTILE_SECRET  from the Turnstile widget
+# The name must match the Worker created in the Cloudflare dashboard.
+name = "jbc-speech-word-addin"
 main = "src/index.js"
 compatibility_date = "2025-09-01"
 workers_dev = true

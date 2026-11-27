@@ -18,7 +18,7 @@ feedback.html (GitHub Pages) ──POST JSON──► Cloudflare Worker ──Gi
 - **Files:**
   - `worker/src/feedback.js`: pure validation (`validateFeedback`) and issue building (`buildIssue`, `neutralizeMentions`).
   - `worker/src/index.js`: the `fetch` handler, CORS, the Turnstile check, and the GitHub call.
-  - `worker/wrangler.toml`: name `jbc-speech-feedback`, plus the vars `REPO` and `ALLOWED_ORIGINS`.
+  - `worker/wrangler.toml`: name `jbc-speech-word-addin` (must match the Worker in the Cloudflare dashboard), plus the vars `REPO` and `ALLOWED_ORIGINS`.
   - `src/feedback.html` and `src/feedback.js`: the form.
   - `src/feedback-config.js`: the Worker URL and the Turnstile **site** key. Both are public.
 - **Until it's configured:** while `feedback-config.js` is empty, the form page shows the GitHub links instead, so nothing breaks before setup.
@@ -54,16 +54,13 @@ Never paste the GitHub token or the Turnstile **secret** key into chat or a file
    - Permissions: Repository → **Issues: Read and write**.
 
    Generate it and copy the token.
-4. **Deploy:** in PowerShell, in the project folder:
-   ```
-   cd worker
-   npx wrangler@4 login                       # opens the browser to authorize
-   npx wrangler@4 deploy                      # prints https://jbc-speech-feedback.<subdomain>.workers.dev
-   npx wrangler@4 secret put GITHUB_TOKEN     # paste the token
-   npx wrangler@4 secret put TURNSTILE_SECRET # paste the Turnstile secret key
-   ```
-   On first deploy, wrangler may ask you to choose a `workers.dev` subdomain. If it fails with a certificate error on a work network, run it from home.
-5. **Connect the form:** put `<Worker URL>/feedback` and the site key into `src/feedback-config.js`, then commit and push. Or send Claude those two public values.
+4. **Deploy:** the Worker `jbc-speech-word-addin` (https://jbc-speech-word-addin.jbcspeech.workers.dev) is connected to this repo through **Cloudflare Workers Builds**. In the Cloudflare dashboard, open Workers & Pages → `jbc-speech-word-addin` → Settings:
+   - **Build → Build configuration:** Root directory `worker`, Build command empty, Deploy command `npx wrangler deploy`. Without the root directory, Cloudflare publishes `site/` as a plain static site instead of running the Worker.
+   - **Variables and Secrets:** add `GITHUB_TOKEN` and `TURNSTILE_SECRET`, both with type **Secret**.
+   - **Deployments:** retry the latest build, or push to `main`. Every push to `main` redeploys it.
+
+   The CLI works too: from `worker/`, run `npx wrangler@4 login`, `npx wrangler@4 deploy` and `npx wrangler@4 secret put <NAME>`. If it fails with a certificate error on a work network, run it from home.
+5. **Connect the form:** `src/feedback-config.js` holds `<Worker URL>/feedback` and the Turnstile site key. Both are set (2026-11-27).
 6. **Test:** open the live feedback page, send a test request, and check the issue appears with the `web form` label. Then close it.
 
 **Renewing the token:** create a new one (step 3), then run `npx wrangler@4 secret put GITHUB_TOKEN`. **Logs:** Cloudflare dashboard → Workers → `jbc-speech-feedback` → Logs.

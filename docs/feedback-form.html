@@ -91,13 +91,8 @@ pre{background:#0a1524;color:#e9f4f1;border-radius:10px;padding:12px 14px;overfl
   <li style="--c:var(--cf)"><input type="checkbox" aria-label="Done: Cloudflare account"><b>Make a free Cloudflare account</b><small>dash.cloudflare.com → Sign up</small></li>
   <li style="--c:var(--cf)"><input type="checkbox" aria-label="Done: Turnstile widget"><b>Create a Turnstile widget</b><small>Turnstile → Add widget · name "JBC Speech feedback" · hostname <code>tcanterbury.github.io</code> · mode Managed → note the <span class="pill public">site key</span> and <span class="pill secret">secret key</span></small></li>
   <li style="--c:var(--gh)"><input type="checkbox" aria-label="Done: GitHub token"><b>Create a fine-grained GitHub token</b><small>Settings → Developer settings → Fine-grained tokens · only <code>jbc_speech</code> · Repository permissions → <b>Issues: Read and write</b> · set an expiry and a reminder → <span class="pill secret">token</span></small></li>
-  <li style="--c:var(--teal)"><input type="checkbox" aria-label="Done: deploy"><b>Deploy the Worker and add the secrets</b>
-<pre>cd worker
-npx wrangler@4 login
-npx wrangler@4 deploy                       # prints the Worker URL
-npx wrangler@4 secret put GITHUB_TOKEN      # paste the token
-npx wrangler@4 secret put TURNSTILE_SECRET  # paste the secret key</pre><small>If it fails with a certificate error on a work network, run it from home.</small></li>
-  <li style="--c:var(--teal)"><input type="checkbox" aria-label="Done: connect"><b>Connect the form</b><small>Put the <span class="pill public">Worker URL</span>/feedback and the <span class="pill public">site key</span> in <code>src/feedback-config.js</code> and push, or send Claude just those two public values.</small></li>
+  <li style="--c:var(--teal)"><input type="checkbox" aria-label="Done: deploy"><b>Point Cloudflare's build at the worker folder and add the secrets</b><small>Workers &amp; Pages → <code>jbc-speech-word-addin</code> → Settings → <b>Build</b>: Root directory <code>worker</code>, Build command empty, Deploy command <code>npx wrangler deploy</code>. Then <b>Variables and Secrets</b> → add <code>GITHUB_TOKEN</code> and <code>TURNSTILE_SECRET</code> as type <b>Secret</b>. Then retry the latest build. Without the root directory, Cloudflare serves <code>site/</code> as a plain page instead of running the Worker.</small></li>
+  <li style="--c:var(--teal)"><input type="checkbox" aria-label="Done: connect" checked><b>Connect the form</b><small>Done: <code>src/feedback-config.js</code> points at <code>jbc-speech-word-addin.jbcspeech.workers.dev/feedback</code> with the <span class="pill public">site key</span>.</small></li>
   <li style="--c:var(--marker)"><input type="checkbox" aria-label="Done: test"><b>Send a test</b><small>Open the live feedback page, send one, check the issue appears with the <code>web form</code> label, then close it.</small></li>
 </ol>
 <p class="callout" style="margin-top:16px"><span class="pill secret">secret</span> values (token, Turnstile secret key) never go into chat or a file. <span class="pill public">public</span> values (Worker URL, site key) are fine to share.</p>
