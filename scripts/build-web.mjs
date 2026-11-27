@@ -67,7 +67,7 @@ h2.add{font-size:16px;margin:28px 0 6px;color:#183b40}
 <ul>
 <li><a href="taskpane.html?preview=1">Try it in your browser</a> (symbols go into a practice box).</li>
 <li><a href="taskpane.html?preview=1&amp;view=chart">Browser demo, Chart view</a></li>
-<li><a href="help.html">Help</a> · <a href="audio-credits.html">Audio credits &amp; license</a></li>
+<li><a href="help.html">Help</a> · <a href="audio-credits.html">Credits &amp; thanks</a></li>
 </ul>
 <h2 class="add">Add it to Word</h2>
 <p>Choose the way that fits your computer. Afterwards, open the <b>JBC Speech</b> tab in Word and click <b>IPA Library</b>. Menu labels vary a little between Word versions.</p>
@@ -109,7 +109,7 @@ h2.add{font-size:16px;margin:28px 0 6px;color:#183b40}
 </ol>
 <p class="tip">Microsoft intends this for testing; the add-in can disappear when browser data is cleared.</p></div>
 </details>
-<p class="note">Version ${version}. Audio recordings by John Esling and Jill House from the International Phonetic Association's interactive chart, CC BY-NC-ND 4.0. Not endorsed by the Association.</p>
+<p class="note">Version ${version}. With heartfelt thanks to John Esling and Jill House for the recordings (from the International Phonetic Association's interactive chart, CC BY-NC-ND 4.0), and to the International Phonetic Association for the IPA chart (CC BY-SA 3.0). Everyone who made this possible is thanked on the <a href="audio-credits.html">Credits &amp; thanks</a> page. This is an independent project and isn't endorsed by them.</p>
 </main></body></html>
 `);
 console.log(`Built ${path.relative(project, out)} for ${baseUrl}`);

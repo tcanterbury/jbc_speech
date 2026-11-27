@@ -34,5 +34,10 @@ UNINSTALL (any one of these; nothing to type)
 - Or open the Start menu, find the JBC Speech folder, and click "Uninstall JBC Speech".
 - Or double-click "Uninstall JBC Speech.cmd" in this folder.
 
-Audio: John Esling & Jill House, from the IPA's interactive chart (CC BY-NC-ND 4.0).
-See "Credits & license" at the bottom of the library.
+WITH THANKS
+Heartfelt thanks to Prof. John Esling and Jill House for the recordings, from the
+International Phonetic Association's interactive IPA chart (CC BY-NC-ND 4.0), and
+to the International Phonetic Association for the IPA chart itself (CC BY-SA 3.0).
+Thanks also to Microsoft (Office Add-ins), the Node.js project, the Unicode
+Consortium and SIL International. Everyone is thanked properly on the
+"Credits & thanks" page, linked at the bottom of the library.

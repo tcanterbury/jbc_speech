@@ -146,3 +146,15 @@ The current Microsoft development tools retain five transitive npm audit finding
 The inventory uses Unicode characters organized by phonetic properties, with the [International Phonetic Association's standard categories](https://www.internationalphoneticassociation.org/content/ipa-chart) as reference. It does not reproduce their chart artwork and is not endorsed by the Association. See Microsoft's [shared runtime setup](https://learn.microsoft.com/en-us/office/dev/add-ins/develop/configure-your-add-in-to-use-a-shared-runtime) and [show/hide documentation](https://learn.microsoft.com/en-us/office/dev/add-ins/develop/show-hide-add-in) for the pane behavior.
 
 No document content is sent to an application backend. The add-in loads Microsoft's Office.js from its CDN, and local development tools have their own network requirements.
+
+## With thanks
+
+This project is only possible because of what others have generously shared. Heartfelt thanks to:
+- **Prof. John Esling** and **Jill House**, for the IPA recordings (from the International Phonetic Association's interactive chart, CC BY-NC-ND 4.0).
+- **The International Phonetic Association**, for the IPA and the IPA chart (revised to 2020, CC BY-SA 3.0), whose arrangement the Chart view follows.
+- **Microsoft**, for Office.js, the Office Add-ins platform and the MIT-licensed `office-addin-*` tools.
+- **The Node.js project and the OpenJS Foundation**, for Node.js (MIT), which the Windows installer includes.
+- **The Unicode Consortium**, for encoding the IPA.
+- **SIL International**, for the Doulos SIL and Charis SIL fonts.
+
+The full thank-you, with license details, is `src/audio-credits.html` (shown as **Credits & thanks** in the add-in). This is an independent project and isn't endorsed by any of them.
